@@ -4,19 +4,25 @@ import BookCCW.includes.common.utils as utils
 class BaseCrawler(scrapy.Spider):
     name = "BaseCrawler"
     file = "BookCCW/includes/common/dominios"
-    count_domain = 0
+    viewed_links = {}
 
     def start_requests(self):
         urls = utils.names_list_from_file(self.file)
         for url in urls:
+            viewed_links[url] = True
             yield scrapy.Request(url=url, callback=self.parse)
 
-    def process_response(self, response):
-        self.count_domain += 1
-        filename = f'domain-{self.count_domain}.html'
+    def save_html(self, response):
+        filename = f'domain-{response.url.split(".")[1]}.html'
         with open(filename, 'wb') as f:
             f.write(response.body)
         self.log(f'Saved file {filename}')
+
+    def process_response(self, response):
+        if response.headers['Content-Type'] != 'text/html':
+            return
+        else:
+            save_html(response)
 
     def parse(self, response):
         self.process_response(response)

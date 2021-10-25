@@ -21,7 +21,13 @@ $ scrapy crawl <crawler_name>
 
 ### Crawlers Disponíveis
 - [x] BaseCrawler
-- [ ] BFSCrawler
+- [x] BFSCrawler
 - [ ] HeuristicCrawler
 
 Os crawlers marcados são os que foram testados e estão funcionando na branch `crawler`.
+
+
+## Dependencias 
+
+* [Python3](https://www.python.org/)
+* [Scrapy](https://scrapy.org/)
