@@ -1,11 +1,11 @@
 class Book:
-    def __init__(self, author, publisher, isbn, date):
+    def __init__(self, author, publisher, isbn, language):
         # self.title = title
         self.author = author
         self.publisher = publisher
         self.isbn = isbn
-        # self.language = language
-        self.date = date
+        self.language = language
+        # self.date = date
 
     def __str__(self):
-        return f'Author: {self.author}\nPublisher: {self.publisher}\nIsbn: {self.isbn}\nDate: {self.date}\n'
+        return f'Author: {self.author}\nPublisher: {self.publisher}\nIsbn: {self.isbn}\nLanguage: {self.language}\n'
