@@ -1,4 +1,4 @@
-from BookCCW.spiders.crawler_base import *
+import crawler_base
 
 class BFSCrawler(BaseCrawler):
     name = "BFSCrawler"
@@ -12,8 +12,9 @@ class BFSCrawler(BaseCrawler):
 
             while(len(self.url_queue) != 0):
                 front_url = self.url_queue.pop(0) 
-                yield scrapy.Request(url=front_url, callback=self.parse)
-            
+                #yield scrapy.Request(url=front_url, callback=self.parse)
+                #Change here for requests
+
             self.count_domain = 0
 
     def process_response(self, response):

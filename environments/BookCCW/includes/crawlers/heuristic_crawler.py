@@ -1,4 +1,4 @@
-from BookCCW.spiders.crawler_base import *
+import crawler_base
 
 class HeuristicCrawler(BaseCrawler):
     name = "HeuristicCrawler"
