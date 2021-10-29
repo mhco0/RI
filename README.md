@@ -15,13 +15,13 @@ $ . env/bin/activate // ou source env/bin/activate
 Para testar algum Crawler basta digitar o seguinte comando:
 ```
 // Certifique-se de estar dentro da pasta 'RI/environments/BookCCW'
-$ scrapy crawl <crawler_name>
+$ python BookCCW <crawler_name>
 ```
 , onde `crawler_name` é o nome dos crawlers disponíveis.
 
 ### Crawlers Disponíveis
-- [x] BaseCrawler
-- [x] BFSCrawler
+- [ ] BaseCrawler
+- [ ] BFSCrawler
 - [ ] HeuristicCrawler
 
 Os crawlers marcados são os que foram testados e estão funcionando na branch `crawler`.
@@ -30,4 +30,5 @@ Os crawlers marcados são os que foram testados e estão funcionando na branch `
 ## Dependencias 
 
 * [Python3](https://www.python.org/)
-* [Scrapy](https://scrapy.org/)
+* [urllib2](https://docs.python.org/3/howto/urllib2.html)
+* [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)

@@ -1,12 +1,16 @@
-import scrapy
+import urllib.request
 import BookCCW.includes.common.utils as utils
 
-class BaseCrawler(scrapy.Spider):
+class BaseCrawler:
     name = "BaseCrawler"
     file = "BookCCW/includes/common/dominios"
     viewed_links = {}
+    forbidden_links = {}
 
     def start_requests(self):
+        with urllib.request.urlopen('http://python.org/') as response:
+            html = response.read()
+
         urls = utils.names_list_from_file(self.file)
         for url in urls:
             viewed_links[url] = True
