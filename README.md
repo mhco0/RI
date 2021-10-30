@@ -15,7 +15,7 @@ $ . env/bin/activate // ou source env/bin/activate
 Para testar algum Crawler basta digitar o seguinte comando:
 ```
 // Certifique-se de estar dentro da pasta 'RI/environments/BookCCW'
-$ python BookCCW <crawler_name>
+$ python bookccw <crawler_name>
 ```
 , onde `crawler_name` é o nome dos crawlers disponíveis.
 

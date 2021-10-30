@@ -1,7 +1,10 @@
 import urllib.request
 import urllib.robotparser as urobot
 import urllib.request
-import BookCCW.includes.common.utils as utils
+import includes.common.utils as utils
+import includes.database.database as database
+import requests
+import socket
 from bs4 import BeautifulSoup
 
 # Test for function to check robots.txt use this later
@@ -32,16 +35,35 @@ def dummy():
 
 class BaseCrawler:
     name = "BaseCrawler"
-    file = "BookCCW/includes/common/dominios"
+    path_domain = "BookCCW/includes/common/dominios"
+    robot_parser = None
     viewed_links = {}
     forbidden_links = {}
 
-    def start_requests(self):
-        urls = utils.names_list_from_file(self.file)
+    def __init__(self, path_to_domain_file):
+        self.path_domain = path_to_domain_file
+        self.robot_parser = urobot.RobotFileParser()
+
+    def set_robots_verification(self, url):
+        self.robot_parser.set_url(url + "/robots.txt")
+        self.robot_parser.read()
+
+    def can_fetch(self, url):
+        return self.robot_parser.can_fetch("*", url)
+
+    def crawl(self):
+        urls = utils.names_list_from_file(self.path_domain)
         for url in urls:
-            viewed_links[url] = True
-            #yield scrapy.Request(url=url, callback=self.parse)
-            # Change here for Request
+            self.viewed_links[url] = True
+            #self.set_robots_verification(url)
+            #if self.can_fetch(url):
+                #site = urllib.request.urlopen(url)
+            headers = {"User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 12871.102.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.141 Safari/537.36"}
+            site = requests.get(url, headers=headers)
+            print(site)
+                
+            #else:
+            #    print("oxi")
 
     def save_html(self, response):
         filename = f'domain-{response.url.split(".")[1]}.html'
@@ -54,6 +76,3 @@ class BaseCrawler:
             return
         else:
             save_html(response)
-
-    def parse(self, response):
-        self.process_response(response)
