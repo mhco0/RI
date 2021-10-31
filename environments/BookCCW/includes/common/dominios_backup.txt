@@ -1,0 +1,10 @@
+https://www.shoptime.com.br/busca/livros
+https://www.estantevirtual.com.br/
+https://www.magazineluiza.com.br/busca/livros/
+https://www.amazon.com.br/Livros/b/?ie=UTF8&node=6740748011&ref_=nav_cs_books_7b0b2bfb19e549c08dda5390bbf25139
+https://lista.mercadolivre.com.br/livros#D[A:livros]
+https://www.saraiva.com.br/livros
+https://www.americanas.com.br/categoria/livros
+https://www3.livrariacultura.com.br/livros
+https://www.travessa.com.br/livros
+https://www.submarino.com.br/busca/livro?content=livro&filter=%7B%22id%22%3A%22categoria%22%2C%22value%22%3A%22Livros%22%2C%22fixed%22%3Afalse%7D&sortBy=relevance&source=nanook&testab=searchTestAB%3Dnew

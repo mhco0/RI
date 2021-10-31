@@ -35,12 +35,13 @@ class BaseCrawler:
 
     def get_pages_robots(self):
         urls = utils.names_list_from_file(self.path_domain)
-        meme = 0
+        self.database.expand_db("/robots")
+        domain_count = 0
         for url in urls:
             headers = {"User-Agent": self.get_fake_user_agent()}
             site = requests.get(url + "/robots.txt", headers=headers)
-            self.database.save_file(db.DatabaseObj(self.path_database + "/test_" + str(meme), url, str(site.content)))
-            meme += 1
+            self.database.save_file(db.DatabaseObj(self.path_database + "/robots/robot_to_domain_" + str(domain_count), url, site.text))
+            domain_count += 1
 
     def crawl(self):
         urls = utils.names_list_from_file(self.path_domain)
@@ -48,13 +49,4 @@ class BaseCrawler:
             self.viewed_links[url] = True
             headers = {"User-Agent": self.get_fake_user_agent()}
             site = requests.get(url, headers=headers)
-            
-                
-    def save_html(self, response):
-       pass
 
-    def process_response(self, response):
-        if response.headers['Content-Type'] != 'text/html':
-            return
-        else:
-            save_html(response)

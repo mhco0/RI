@@ -1,0 +1,4 @@
+{
+    "link": "https://www.saraiva.com.br",
+    "content": "# Disallow all crawlers access to certain pages. \r\nUser-agent: * \r\n\r\nDisallow: loja.saraiva.com.br\r\nDisallow: loja.saraiva.com.br/*\r\nDisallow: /img/* \r\nDisallow: /account/* \r\nDisallow: /login/* \r\nDisallow: /checkout/* \r\nDisallow: /busca/* \r\nDisallow: /quick-view/* \r\nDisallow: /espiar/*\r\nDisallow: /z-inativo/*\r\nDisallow: /z-marketplace/*\r\nDisallow: /z-marketplace\r\nDisallow: /login\r\nDissalow: /checkout\r\nDissalow: /_secure\r\n\r\n\r\nDissalow: /*?ruid=\r\nDissalow: /*busca?ft=\r\nDissalow: /*cache=\r\nDissalow: /*fil_id=\r\nDissalow: /*sku=\r\nDissalow: /*pac_id=\r\nDissalow: /*utm_\r\nDissalow: /*mi=VITRINECHAORDIC\r\nDissalow: /*seller_id=\r\nDissalow: /editora$\r\n\r\nSitemap: https://www.saraiva.com.br/sitemap.xml"
+}

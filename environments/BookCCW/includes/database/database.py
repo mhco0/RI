@@ -24,7 +24,14 @@ class Database:
             try:
                 os.makedirs(self.base_path, exist_ok=True)
             except OSError as error:
-                print("Directory '%s' can not be created")
+                print("Directory can not be created")
+
+    def expand_db(self, new_dir):
+       if not os.path.exists(self.base_path + new_dir):
+            try:
+                os.makedirs(self.base_path + new_dir, exist_ok=True)
+            except OSError as error:
+                print("Directory can not be created")
     
     def save_file(self, db_obj):
         with open(db_obj.filename, 'w', encoding='utf-8') as file:
