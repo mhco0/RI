@@ -1,0 +1,4 @@
+{
+    "link": "https://www.travessa.com.br",
+    "content": "User-agent: Linguee\r\nDisallow: /\r\n\r\nUser-agent: ltx71\r\nDisallow: /\r\n\r\nUser-agent: Baiduspider\r\nUser-agent: Baiduspider-video\r\nUser-agent: Baiduspider-image\r\nDisallow: /\r\n\r\nUser-agent: AhrefsBot\r\nDisallow: /\r\n\r\nUser-agent: BLEXBot\r\nDisallow: /\r\n\r\nUser-agent: MJ12bot\r\nDisallow: /\r\n\r\nUser-agent: Yandex\r\nDisallow: /\r\n\r\nUser-agent: *\r\nDisallow: /wpgProdutor.aspx\r\nDisallow: /wpgListaTer.aspx\r\nDisallow: /wpgCarrinhoLista.aspx\r\nDisallow: /wpgCarrinhoDados.aspx\r\nDisallow: /wpgObjDesejoMain.aspx\r\nDisallow: /wpgObjDesejoBusca.aspx\r\nDisallow: /wpgObjDesejo.aspx\r\nDisallow: /wpgCarrinho.aspx\r\n"
+}

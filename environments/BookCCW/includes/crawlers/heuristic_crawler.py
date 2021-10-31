@@ -1,4 +1,4 @@
-import crawler_base
+from includes.crawlers.crawler_base import *
 
 class HeuristicCrawler(BaseCrawler):
     name = "HeuristicCrawler"

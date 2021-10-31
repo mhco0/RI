@@ -1,8 +1,14 @@
-import crawler_base
+from includes.crawlers.crawler_base import *
 
 class BFSCrawler(BaseCrawler):
     name = "BFSCrawler"
     url_queue = []
+
+    def __init__(self,  path_to_domain_file, path_to_database, max_download_pages = 1000):
+        super().__init__(path_to_domain_file, path_to_database, max_download_pages)
+
+    def crawl(self):
+        pass
 
     def start_requests(self):
         urls = utils.names_list_from_file(self.file)
