@@ -1,4 +1,32 @@
-{
-    "link": "https://www.saraiva.com.br",
-    "content": "# Disallow all crawlers access to certain pages. \r\nUser-agent: * \r\n\r\nDisallow: loja.saraiva.com.br\r\nDisallow: loja.saraiva.com.br/*\r\nDisallow: /img/* \r\nDisallow: /account/* \r\nDisallow: /login/* \r\nDisallow: /checkout/* \r\nDisallow: /busca/* \r\nDisallow: /quick-view/* \r\nDisallow: /espiar/*\r\nDisallow: /z-inativo/*\r\nDisallow: /z-marketplace/*\r\nDisallow: /z-marketplace\r\nDisallow: /login\r\nDissalow: /checkout\r\nDissalow: /_secure\r\n\r\n\r\nDissalow: /*?ruid=\r\nDissalow: /*busca?ft=\r\nDissalow: /*cache=\r\nDissalow: /*fil_id=\r\nDissalow: /*sku=\r\nDissalow: /*pac_id=\r\nDissalow: /*utm_\r\nDissalow: /*mi=VITRINECHAORDIC\r\nDissalow: /*seller_id=\r\nDissalow: /editora$\r\n\r\nSitemap: https://www.saraiva.com.br/sitemap.xml"
-}
+# Disallow all crawlers access to certain pages. 
+User-agent: * 
+
+Disallow: loja.saraiva.com.br
+Disallow: loja.saraiva.com.br/*
+Disallow: /img/* 
+Disallow: /account/* 
+Disallow: /login/* 
+Disallow: /checkout/* 
+Disallow: /busca/* 
+Disallow: /quick-view/* 
+Disallow: /espiar/*
+Disallow: /z-inativo/*
+Disallow: /z-marketplace/*
+Disallow: /z-marketplace
+Disallow: /login
+Dissalow: /checkout
+Dissalow: /_secure
+
+
+Dissalow: /*?ruid=
+Dissalow: /*busca?ft=
+Dissalow: /*cache=
+Dissalow: /*fil_id=
+Dissalow: /*sku=
+Dissalow: /*pac_id=
+Dissalow: /*utm_
+Dissalow: /*mi=VITRINECHAORDIC
+Dissalow: /*seller_id=
+Dissalow: /editora$
+
+Sitemap: https://www.saraiva.com.br/sitemap.xml

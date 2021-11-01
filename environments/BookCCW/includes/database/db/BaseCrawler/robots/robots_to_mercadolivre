@@ -1,4 +1,646 @@
-{
-    "link": "https://lista.mercadolivre.com.br",
-    "content": "User-agent: *\n\n##Allow - SPECIAL\nAllow: /_DisplayType_G_OrderId_AUCTION*STOP_AuctTypeID_AUC_FilterId_UN*PESOY\n\nDisallow: *_Discount_\nDisallow: *_TiempoEnvio_\nDisallow: *_TempoFrete_\nDisallow: *_SIZE_\nDisallow: *_TOTAL*AREA_\nDisallow: *_COVERED*AREA_\nDisallow: *_FULL*BATHROOMS_\nDisallow: *_PARKING*LOTS_\nDisallow: *_ItemTypeID_U\nDisallow: *_PublishedToday_\nDisallow: *_HAS*AIR*CONDITIONING_\nDisallow: *_HAS*GARDEN_\nDisallow: *_HAS*GRILL_\nDisallow: *_HAS*SWIMMING*POOL_\nDisallow: *_Vagas_\nDisallow: *_Cocheras_\nDisallow: *_Banos_\nDisallow: *bottomPads\nDisallow: *_public_\nDisallow: *CONDITION_2230284\n\n##Block - Bookmarks\nDisallow: /search/bookmarks/\n\n##Block - STATIC FILES\nDisallow: /files/\n\n##Block - GO LOCAL\nDisallow: /search/golocal/\n\n##Block - BAD REQUEST\nDisallow: /undefined\nDisallow: /null\n\n##Block - ORDER\nDisallow: /*_OrderId_\n\n##Block - SPECIAL\nDisallow: /*_OtherFilterID_\nDisallow: /*_FilterId_\nDisallow: /*_BestSellers_\nDisallow: /*_AcceptsMercadoPago_\nDisallow: /*_PublishedToday_\nDisallow: /*_FinishedToday_\nDisallow: /*_CarDealer_\nDisallow: /*_RealEstateAgency_\nDisallow: /*_Installments_\nDisallow: /*mercadolibre\nDisallow: /*mercado-libre\nDisallow: /*PrCategId\nDisallow: /adultos/_PrCategId_AD\nDisallow: /adultos/*\nDisallow: /*_adult\n\n##Block - USERS\nDisallow: /*_CustId_\n\n##Noindex\nDisallow: /*o-l-x\n\n##Block - BUYING_MODE\nDisallow: /*_AuctTypeID_AFP\n\n##Block - SITES IDS\n\nDisallow: */mla-\nDisallow: */mlb-\nDisallow: */mlm-\nDisallow: */mlc-\nDisallow: */mlu-\nDisallow: */mlv-\nDisallow: */mco-\nDisallow: */mpe-\nDisallow: */mec-\n\n##Block - Part of URLs\n\nDisallow: *mail.\nDisallow: *yahoo.com\nDisallow: *http\nDisallow: *www.\n\n##BLock - Qcat parameters\nDisallow: *_DisplayType_\nDisallow: *_OrderId_\nDisallow: *_CostoEnvio_\nDisallow: *_CustoFrete_\nDisallow: *_Envio_\nDisallow: *_Installments_\nDisallow: *_ItemTypeID_\nDisallow: *_PriceRange_\nDisallow: *_AuctTypeID_\nDisallow: *_BestSellers_\nDisallow: *_FinishedToday_\nDisallow: *_KILOMETERS_\nDisallow: *_FUEL*TYPE_\nDisallow: *_TRANSMISSION_\nDisallow: *_COLOR_\nDisallow: *_STEERING_\nDisallow: *_HAS*ABS*BRAKES_\nDisallow: *_HAS*ALARM_\nDisallow: *_HAS*POWER*DOOR*LOCKS_\nDisallow: *_HAS*POWER*WINDOWS_\nDisallow: *_ENGINE*DISPLACEMENT_\nDisallow: *_ARMORED_\n\n##Block - PRICES\nDisallow: /*_PriceRange_\nDisallow: /*_PriceMin_\nDisallow: /*_PriceMax_\n\n##Block - DEPRECATED\nDisallow: /*_MetaCategIDs_\nDisallow: /*_NoQCat_\nDisallow: /*_Qshow_\n\n##Block - OTHERS\nDisallow: /*_SearchBoth_\nDisallow: /*_Aso_\nDisallow: /*_seller=yes_\nDisallow: /*_Tamanho-Bebe_\nDisallow: /*_show_\nDisallow: /*_filterValue_\nDisallow: /*_Bnr_\nDisallow: /*_Qc_\nDisallow: /*_eshop_\n\n##Block - ROBBED\nDisallow: /*robada\nDisallow: /*robado\n\n\n##Block - cojiendo\nDisallow: /*cojiendo\n\n##Block - notas falsas\nDisallow: /*notas-fake\nDisallow: /*nota-fake\nDisallow: /*nota-falsa\nDisallow: /*notas-falsas\n\n##Block - Drogas\nDisallow: /*alucinogen\nDisallow: /*cañamo\nDisallow: /*cocaina\nDisallow: /*crack\nDisallow: /*droga\nDisallow: /*extasis\nDisallow: /*heroina\nDisallow: /*marihuana\nDisallow: /*mariuana\nDisallow: /*narcotico\nDisallow: /*falopa\nDisallow: /*lisergico\nDisallow: /*lisergica\nDisallow: /*burundanga\nDisallow: /*cogumelo\nDisallow: /*cucumelo\nDisallow: /*extasys\nDisallow: /*-faso-\nDisallow: */faso\nDisallow: /*-faso$\nDisallow: /*frula\nDisallow: /*lsd\nDisallow: /*hachis\nDisallow: /*maconha\nDisallow: /*mdma\nDisallow: /*-opio-\nDisallow: */opio\nDisallow: /*-opio$\nDisallow: /*pasta-base\nDisallow: /*peyote\nDisallow: /*popper\nDisallow: /*porro\nDisallow: /*-rola-\nDisallow: */rola\nDisallow: /*-rola$\nDisallow: /*weed\nDisallow: /*cannabis\nDisallow: /*canabis\nDisallow: /*cytoteq\nDisallow: /*citoteq\nDisallow: /*cytotec\nDisallow: /*citotec\nDisallow: /*misoprostol\nDisallow: /*belviq\nDisallow: /*lorcaserina\nDisallow: /*oxaprost\n\n##Block - BannedWords\nDisallow: /*abortivo\nDisallow: /*abortiva\nDisallow: /*abortar-\nDisallow: /*-abortar$\nDisallow: /*aborto-\nDisallow: /*-aborto$\nDisallow: /*abusad\nDisallow: /*-anal-\nDisallow: /*-anal$\nDisallow: /*cachond\nDisallow: /*clitoris\nDisallow: /*-coger-\nDisallow: /*-coger$\nDisallow: */coger\nDisallow: /*-cojer-\nDisallow: /*-cojer$\nDisallow: */cojer\nDisallow: /*cojida-\nDisallow: /*-cojida\nDisallow: */cojida\nDisallow: /*cogida-\nDisallow: /*-cogida\nDisallow: */cogida\nDisallow: /*cogiendo-\nDisallow: /*-cojiendo$\nDisallow: /*concha-de-mujer\nDisallow: /*conchas-de-mujer\nDisallow: /*concha-en-lata\nDisallow: /*-culo-\nDisallow: /*-culo$\nDisallow: */culo-\nDisallow: /*-culos-\nDisallow: /*-culos$\nDisallow: */culos\nDisallow: /*-culona\nDisallow: /*escorts-\nDisallow: /*-escorts$\nDisallow: */escorts\nDisallow: /*esperma\nDisallow: /*follando-\nDisallow: /*-follando$\nDisallow: /*-follar-\nDisallow: /*-follar$\nDisallow: */follar-\nDisallow: /*-gay$\nDisallow: /*-gay-\nDisallow: */gay-\nDisallow: /*-gey$\nDisallow: /*-gey-\nDisallow: */gey-\nDisallow: */hentai-\nDisallow: /*-hentai\nDisallow: /*homosexual\nDisallow: /*hussyfan\nDisallow: /*incesto\nDisallow: /*lesbiana\nDisallow: /*masturbar\nDisallow: /*masturbacion\nDisallow: /*merca\nDisallow: /*mierda\nDisallow: /*necrofilia\nDisallow: /*nudista\nDisallow: /*orgasm\nDisallow: /*-pedo-\nDisallow: /*-pedo$\nDisallow: */pedo-\nDisallow: /*-pedos-\nDisallow: /*-pedos$\nDisallow: */pedos-\nDisallow: /*pedofilia\nDisallow: /*pendeja\nDisallow: /*-pene-\nDisallow: /*-pene$\nDisallow: */pene-\nDisallow: /*-penes-\nDisallow: /*-penes$\nDisallow: */penes-\nDisallow: /*esclavo\nDisallow: /*porno-\nDisallow: /*-porno$\nDisallow: /*pornografica\nDisallow: /*pornografico\nDisallow: /*prostitución\nDisallow: /*prostituta\nDisallow: /*prostituto\nDisallow: /*-puta-\nDisallow: /*-puta$\nDisallow: */puta-\nDisallow: /*-putas-\nDisallow: /*-putas$\nDisallow: */putas-\nDisallow: /*-puto-\nDisallow: /*-puto$\nDisallow: */puto-\nDisallow: /*-putos-\nDisallow: /*-putos$\nDisallow: */putos-\nDisallow: /*-sexo-\nDisallow: /*-sexo$\nDisallow: */sexo-\nDisallow: /*sexual-\nDisallow: /*-sexual$\nDisallow: /*sorete\nDisallow: /*estriper\nDisallow: /*stripper\nDisallow: /*striper\nDisallow: /*taxi-boy\nDisallow: /*taxiboy\nDisallow: /*tortura\nDisallow: /*-trolo-\nDisallow: /*-trolo$\nDisallow: /*-trola-\nDisallow: /*-trola$\nDisallow: /*vagina\nDisallow: /*zoofilia\nDisallow: /*zooskool\nDisallow: /*-xxx-\nDisallow: /*-x-x-x\nDisallow: /*-xxx$\nDisallow: /*xnxx\nDisallow: /*xvideo\n\n##Block - Ilegal\nDisallow: /*negro-africano\nDisallow: /*cable-clandestino\nDisallow: /*choreado\nDisallow: /*crackeado\nDisallow: /*delito\nDisallow: /*denuncia\nDisallow: /*desbloqueo\nDisallow: /*estafa\nDisallow: /*fraude\nDisallow: /*hackeado\nDisallow: /*robada\nDisallow: /*robado\nDisallow: /*trucha\nDisallow: /*trucho\nDisallow: /*pishing\n\nDisallow: /*chicas-prepago\nDisallow: /*chicas-prepagos\nDisallow: /*mujer-prepago\nDisallow: /*mujeres-prepagos\nDisallow: /*damas-prepago\nDisallow: /*chicos-prepagos\nDisallow: /*chico-prepago\n\n##Block - MOTORS\nDisallow: /*_KmsMin_\nDisallow: /*_KmsMax_\nDisallow: /*_kilometers_\n\n##Block - REAL_ESTATE\nDisallow: /*_SupMax_\nDisallow: /*_SupMin_\n\n##Block - EXPLICIT FILTER\nDisallow: /*_NoIndex_True\n\n##Block - EXTENSION\nDisallow: /*.php\nDisallow: /*.asp\nDisallow: /*.html\nDisallow: /*.js\nDisallow: /*.css\nDisallow: /*.jpg\nDisallow: /*.gif\n\n#Block - cianeto potassio\nDisallow: /*cianeto-de-potassio\nDisallow: /*cianeto-potassio\nDisallow: /*cianeto-de-potássio\nDisallow: /*cianeto-potássio\nDisallow: /*cianuro-de-potasio\nDisallow: /*cianuro-potasio\n\n##Block - URL INDEX\nDisallow: */www\n\n##Block - COMPETIDORS KEYWORDS MLA\nDisallow: /*garbarino\nDisallow: /*alamaula\nDisallow: /*autofoco\nDisallow: /*buen-acuerdo\nDisallow: /*buenacuerdo\nDisallow: /*olx\nDisallow: /*netshoes\nDisallow: /*?karpita\nDisallow: /*musimundo\n\n##Block - OTHER MLA\nDisallow: */cordoba-vende\nDisallow: */deportes-juegos-salon/quiniela-resultados-notitimba\nDisallow: */quiniela-resultados-notitimba\nDisallow: */venta-fe\n\n##Block - COMPETIDORS KEYWORDS MLM\nDisallow: /*anumex\nDisallow: /*vivastreet\nDisallow: /*locanto\n\n##Block - OTHER MLM\nDisallow: */monterrey\nDisallow: */segunda-mano\nDisallow: */segunda-mano-mexico\nDisallow: */vendo-bara\n\n##Block - COMPETIDORS KEYWORDS MLC\nDisallow: /*yapo\n\n##Block Brand\nDisallow: /*mercado-livre\nDisallow: /*mercadolivre\nDisallow: /*mercadopago\nDisallow: /*mercado-pago\nDisallow: /*mercadocredito\nDisallow: /*mercado-credito\nDisallow: /*mercado-clics\nDisallow: /*mercadoclics\n\n#Block - TMP\n\nDisallow: /*aviso-oportuno\nDisallow: /*abogado-siro-astolfi\nDisallow: /*siro-astolfi-abogado\nDisallow: /*dr-carlos-rotman-abogado\nDisallow: /*abogado-dr-carlos-rotman\nDisallow: /*estudio-bruchou-fernandez\nDisallow: /*jennifer-garcia\nDisallow: /*jeniffer-garcia\nDisallow: /*jenifer-garcia\nDisallow: /*megasur\nDisallow: /*fabiana-salabert\nDisallow: /*gaston-jarochevsky\n\nDisallow: /*ocasas.com.uy\n\n##Block - OFFSET\nDisallow: /*_Desde_\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n##Block - Linha Chilena\nDisallow: /*chilena\n##Block - roubada\nDisallow: /*roubada\n\nNoindex: /*arma\nNoindex: /*jet-loader\nNoindex: /*machado\nNoindex: /*machadinha\nNoindex: /*nesta\nNoindex: /*besta\nNoindex: /*arco\nNoindex: /*flecha\n\n##Block - APARATOS MEDICOS Y DECODIFICADORES\nNoindex: /*regentes\nNoindex: /*regent\nNoindex: /*herbicidaroundup\nNoindex: /*tordon\nNoindex: /*randap\nNoindex: /*randp\nNoindex: /*vertimec\nNoindex: /*glifosato\nNoindex: /*cipermetrina\nNoindex: /*standak\nNoindex: /*agroneem\nNoindex: /*actara\nNoindex: /*atrazina\nNoindex: /*klap\nNoindex: /*quimioleo\nNoindex: /*gastoxin\nNoindex: /*kasumin\nNoindex: /*imidacloprid\nNoindex: /*quatermon\nNoindex: /*dipil\nNoindex: /*capivara\nNoindex: /*curso oab\nNoindex: /*cytotec\nNoindex: /*diazepam\nNoindex: /*fluoxetina\nNoindex: /*dualid\nNoindex: /*clonazepam\nNoindex: /*pramil\nNoindex: /*tadalafila\nNoindex: /*sindelafila\nNoindex: /*sibutramina\nNoindex: /*dianabol\nNoindex: /*dimagrir\nNoindex: /*stanozolol\nNoindex: /*trembolona\nNoindex: /*durateston\nNoindex: /*anfepramona\nNoindex: /*winstrol\nNoindex: /*lipostabil\nNoindex: /*desobesi\nNoindex: /*femproporex\nNoindex: /*oxandrolona\nNoindex: /*minoxidil\nNoindex: /*manzindol\nNoindex: /*redufit\nNoindex: /*canabidiol\nNoindex: /*phytoemagry\nNoindex: /*natu diet\nNoindex: /*melatonina\nNoindex: /*empréstimo\nNoindex: /*ecógrafos\nNoindex: /*desfibriladores\nNoindex: /*oxímetros\nNoindex: /*bisturi\nNoindex: /*olaplex\nNoindex: /*seguidores\nNoindex: /*iptv\nNoindex: /*agrotóxico\nNoindex: /*testosterona\nNoindex: /*dhea\nNoindex: /*prostituição\nNoindex: /*zoofilia\nNoindex: /*necrofilia\nNoindex: /*pedofilia\nNoindex: /*agenius\nNoindex: /*akbox\nNoindex: /*alma\nNoindex: /*alphasat\nNoindex: /*audisat\nNoindex: /*azamerica\nNoindex: /*azbox\nNoindex: /*azclass\nNoindex: /*azdox\nNoindex: /*azfox\nNoindex: /*azfree\nNoindex: /*azgold\nNoindex: /*azplay\nNoindex: /*azmax\nNoindex: /*azplus\nNoindex: /*azsat\nNoindex: /*azsky\nNoindex: /*azsmart\nNoindex: /*atto\nNoindex: /*boxat\nNoindex: /*btv\nNoindex: /*cinebox\nNoindex: /*cristor\nNoindex: /*dreamedia\nNoindex: /*duosat\nNoindex: /*eurosat\nNoindex: /*evolutionbox\nNoindex: /*freesky\nNoindex: /*hi-box\nNoindex: /*krosat\nNoindex: /*lexusbox\nNoindex: /*lexuz\nNoindex: /*megabox\nNoindex: /*miuibox\nNoindex: /*movisky\nNoindex: /*msat\nNoindex: /*mxq\nNoindex: /*mx9\nNoindex: /*nazabox\nNoindex: /*neonsat\nNoindex: /*netfree\nNoindex: /*netsat\nNoindex: /*newsat\nNoindex: /*panthersky\nNoindex: /*perabox\nNoindex: /*premiumbox\nNoindex: /*probox\nNoindex: /*poptv\nNoindex: /*qbus\nNoindex: /*qmda\nNoindex: /*omegabox\nNoindex: /*qqbox\nNoindex: /*satbox\nNoindex: /*showbox\nNoindex: /*skybox\nNoindex: /*skysat\nNoindex: /*smartbox\nNoindex: /*smartone\nNoindex: /*smbox\nNoindex: /*sonicview\nNoindex: /*starsat\nNoindex: /*stremiobox\nNoindex: /*superbox\nNoindex: /*tocombox\nNoindex: /*tocomcoax\nNoindex: /*tocomfree\nNoindex: /*tocomlink\nNoindex: /*tocomnet\nNoindex: /*tocomsat\nNoindex: /*uau\nNoindex: /*viubox\nNoindex: /*vivobox\nNoindex: /*volcanobox\nNoindex: /*voyeursat\nNoindex: /*yumibox\nNoindex: /*zatbox\nNoindex: /*dipirona\nNoindex: /*lancetador\nNoindex: /*freei\nNoindex: /*hd duo\nNoindex: /*i-box\nNoindex: /*i-link\nNoindex: /*q-star\n\n##Allow - Mercado-point\nAllow: /*mercadopago-point\nAllow: /*mercado-pago-point\nAllow: /*maquininha-mercado\nAllow: /*maquina-mercado\nAllow: /*maquineta-mercado\nAllow: /*maquininha-de-cartao-mercado\nAllow: /*maquina-de-cartao-mercado\nAllow: /*maquineta-de-cartao-mercado\nAllow: /*leitor-de-cartao-mercado\n\n##Block - microcelulares\nDisallow: /*micro-celular\nDisallow: /*microcelular\nDisallow: /*mini-celular\nDisallow: /*minicelular\n\n##Block - joesley\nDisallow: /*joesley\n\n##Block - pillowmed\nDisallow: /*pillowmed\n\n#Block - corda-para-suicidio & corda-suicidio & cordas-para-suicidio\nDisallow: /*corda-suicidio\nDisallow: /*corda-para-suicidio\nDisallow: /*cordas-para-suicidio\nDisallow: /*cordas-suicidio\n\n##Redirects\nDisallow: *9993244-AMLB\n\n\n"
-}
+User-agent: *
+
+##Allow - SPECIAL
+Allow: /_DisplayType_G_OrderId_AUCTION*STOP_AuctTypeID_AUC_FilterId_UN*PESOY
+
+Disallow: *_Discount_
+Disallow: *_TiempoEnvio_
+Disallow: *_TempoFrete_
+Disallow: *_SIZE_
+Disallow: *_TOTAL*AREA_
+Disallow: *_COVERED*AREA_
+Disallow: *_FULL*BATHROOMS_
+Disallow: *_PARKING*LOTS_
+Disallow: *_ItemTypeID_U
+Disallow: *_PublishedToday_
+Disallow: *_HAS*AIR*CONDITIONING_
+Disallow: *_HAS*GARDEN_
+Disallow: *_HAS*GRILL_
+Disallow: *_HAS*SWIMMING*POOL_
+Disallow: *_Vagas_
+Disallow: *_Cocheras_
+Disallow: *_Banos_
+Disallow: *bottomPads
+Disallow: *_public_
+Disallow: *CONDITION_2230284
+
+##Block - Bookmarks
+Disallow: /search/bookmarks/
+
+##Block - STATIC FILES
+Disallow: /files/
+
+##Block - GO LOCAL
+Disallow: /search/golocal/
+
+##Block - BAD REQUEST
+Disallow: /undefined
+Disallow: /null
+
+##Block - ORDER
+Disallow: /*_OrderId_
+
+##Block - SPECIAL
+Disallow: /*_OtherFilterID_
+Disallow: /*_FilterId_
+Disallow: /*_BestSellers_
+Disallow: /*_AcceptsMercadoPago_
+Disallow: /*_PublishedToday_
+Disallow: /*_FinishedToday_
+Disallow: /*_CarDealer_
+Disallow: /*_RealEstateAgency_
+Disallow: /*_Installments_
+Disallow: /*mercadolibre
+Disallow: /*mercado-libre
+Disallow: /*PrCategId
+Disallow: /adultos/_PrCategId_AD
+Disallow: /adultos/*
+Disallow: /*_adult
+
+##Block - USERS
+Disallow: /*_CustId_
+
+##Noindex
+Disallow: /*o-l-x
+
+##Block - BUYING_MODE
+Disallow: /*_AuctTypeID_AFP
+
+##Block - SITES IDS
+
+Disallow: */mla-
+Disallow: */mlb-
+Disallow: */mlm-
+Disallow: */mlc-
+Disallow: */mlu-
+Disallow: */mlv-
+Disallow: */mco-
+Disallow: */mpe-
+Disallow: */mec-
+
+##Block - Part of URLs
+
+Disallow: *mail.
+Disallow: *yahoo.com
+Disallow: *http
+Disallow: *www.
+
+##BLock - Qcat parameters
+Disallow: *_DisplayType_
+Disallow: *_OrderId_
+Disallow: *_CostoEnvio_
+Disallow: *_CustoFrete_
+Disallow: *_Envio_
+Disallow: *_Installments_
+Disallow: *_ItemTypeID_
+Disallow: *_PriceRange_
+Disallow: *_AuctTypeID_
+Disallow: *_BestSellers_
+Disallow: *_FinishedToday_
+Disallow: *_KILOMETERS_
+Disallow: *_FUEL*TYPE_
+Disallow: *_TRANSMISSION_
+Disallow: *_COLOR_
+Disallow: *_STEERING_
+Disallow: *_HAS*ABS*BRAKES_
+Disallow: *_HAS*ALARM_
+Disallow: *_HAS*POWER*DOOR*LOCKS_
+Disallow: *_HAS*POWER*WINDOWS_
+Disallow: *_ENGINE*DISPLACEMENT_
+Disallow: *_ARMORED_
+
+##Block - PRICES
+Disallow: /*_PriceRange_
+Disallow: /*_PriceMin_
+Disallow: /*_PriceMax_
+
+##Block - DEPRECATED
+Disallow: /*_MetaCategIDs_
+Disallow: /*_NoQCat_
+Disallow: /*_Qshow_
+
+##Block - OTHERS
+Disallow: /*_SearchBoth_
+Disallow: /*_Aso_
+Disallow: /*_seller=yes_
+Disallow: /*_Tamanho-Bebe_
+Disallow: /*_show_
+Disallow: /*_filterValue_
+Disallow: /*_Bnr_
+Disallow: /*_Qc_
+Disallow: /*_eshop_
+
+##Block - ROBBED
+Disallow: /*robada
+Disallow: /*robado
+
+
+##Block - cojiendo
+Disallow: /*cojiendo
+
+##Block - notas falsas
+Disallow: /*notas-fake
+Disallow: /*nota-fake
+Disallow: /*nota-falsa
+Disallow: /*notas-falsas
+
+##Block - Drogas
+Disallow: /*alucinogen
+Disallow: /*cañamo
+Disallow: /*cocaina
+Disallow: /*crack
+Disallow: /*droga
+Disallow: /*extasis
+Disallow: /*heroina
+Disallow: /*marihuana
+Disallow: /*mariuana
+Disallow: /*narcotico
+Disallow: /*falopa
+Disallow: /*lisergico
+Disallow: /*lisergica
+Disallow: /*burundanga
+Disallow: /*cogumelo
+Disallow: /*cucumelo
+Disallow: /*extasys
+Disallow: /*-faso-
+Disallow: */faso
+Disallow: /*-faso$
+Disallow: /*frula
+Disallow: /*lsd
+Disallow: /*hachis
+Disallow: /*maconha
+Disallow: /*mdma
+Disallow: /*-opio-
+Disallow: */opio
+Disallow: /*-opio$
+Disallow: /*pasta-base
+Disallow: /*peyote
+Disallow: /*popper
+Disallow: /*porro
+Disallow: /*-rola-
+Disallow: */rola
+Disallow: /*-rola$
+Disallow: /*weed
+Disallow: /*cannabis
+Disallow: /*canabis
+Disallow: /*cytoteq
+Disallow: /*citoteq
+Disallow: /*cytotec
+Disallow: /*citotec
+Disallow: /*misoprostol
+Disallow: /*belviq
+Disallow: /*lorcaserina
+Disallow: /*oxaprost
+
+##Block - BannedWords
+Disallow: /*abortivo
+Disallow: /*abortiva
+Disallow: /*abortar-
+Disallow: /*-abortar$
+Disallow: /*aborto-
+Disallow: /*-aborto$
+Disallow: /*abusad
+Disallow: /*-anal-
+Disallow: /*-anal$
+Disallow: /*cachond
+Disallow: /*clitoris
+Disallow: /*-coger-
+Disallow: /*-coger$
+Disallow: */coger
+Disallow: /*-cojer-
+Disallow: /*-cojer$
+Disallow: */cojer
+Disallow: /*cojida-
+Disallow: /*-cojida
+Disallow: */cojida
+Disallow: /*cogida-
+Disallow: /*-cogida
+Disallow: */cogida
+Disallow: /*cogiendo-
+Disallow: /*-cojiendo$
+Disallow: /*concha-de-mujer
+Disallow: /*conchas-de-mujer
+Disallow: /*concha-en-lata
+Disallow: /*-culo-
+Disallow: /*-culo$
+Disallow: */culo-
+Disallow: /*-culos-
+Disallow: /*-culos$
+Disallow: */culos
+Disallow: /*-culona
+Disallow: /*escorts-
+Disallow: /*-escorts$
+Disallow: */escorts
+Disallow: /*esperma
+Disallow: /*follando-
+Disallow: /*-follando$
+Disallow: /*-follar-
+Disallow: /*-follar$
+Disallow: */follar-
+Disallow: /*-gay$
+Disallow: /*-gay-
+Disallow: */gay-
+Disallow: /*-gey$
+Disallow: /*-gey-
+Disallow: */gey-
+Disallow: */hentai-
+Disallow: /*-hentai
+Disallow: /*homosexual
+Disallow: /*hussyfan
+Disallow: /*incesto
+Disallow: /*lesbiana
+Disallow: /*masturbar
+Disallow: /*masturbacion
+Disallow: /*merca
+Disallow: /*mierda
+Disallow: /*necrofilia
+Disallow: /*nudista
+Disallow: /*orgasm
+Disallow: /*-pedo-
+Disallow: /*-pedo$
+Disallow: */pedo-
+Disallow: /*-pedos-
+Disallow: /*-pedos$
+Disallow: */pedos-
+Disallow: /*pedofilia
+Disallow: /*pendeja
+Disallow: /*-pene-
+Disallow: /*-pene$
+Disallow: */pene-
+Disallow: /*-penes-
+Disallow: /*-penes$
+Disallow: */penes-
+Disallow: /*esclavo
+Disallow: /*porno-
+Disallow: /*-porno$
+Disallow: /*pornografica
+Disallow: /*pornografico
+Disallow: /*prostitución
+Disallow: /*prostituta
+Disallow: /*prostituto
+Disallow: /*-puta-
+Disallow: /*-puta$
+Disallow: */puta-
+Disallow: /*-putas-
+Disallow: /*-putas$
+Disallow: */putas-
+Disallow: /*-puto-
+Disallow: /*-puto$
+Disallow: */puto-
+Disallow: /*-putos-
+Disallow: /*-putos$
+Disallow: */putos-
+Disallow: /*-sexo-
+Disallow: /*-sexo$
+Disallow: */sexo-
+Disallow: /*sexual-
+Disallow: /*-sexual$
+Disallow: /*sorete
+Disallow: /*estriper
+Disallow: /*stripper
+Disallow: /*striper
+Disallow: /*taxi-boy
+Disallow: /*taxiboy
+Disallow: /*tortura
+Disallow: /*-trolo-
+Disallow: /*-trolo$
+Disallow: /*-trola-
+Disallow: /*-trola$
+Disallow: /*vagina
+Disallow: /*zoofilia
+Disallow: /*zooskool
+Disallow: /*-xxx-
+Disallow: /*-x-x-x
+Disallow: /*-xxx$
+Disallow: /*xnxx
+Disallow: /*xvideo
+
+##Block - Ilegal
+Disallow: /*negro-africano
+Disallow: /*cable-clandestino
+Disallow: /*choreado
+Disallow: /*crackeado
+Disallow: /*delito
+Disallow: /*denuncia
+Disallow: /*desbloqueo
+Disallow: /*estafa
+Disallow: /*fraude
+Disallow: /*hackeado
+Disallow: /*robada
+Disallow: /*robado
+Disallow: /*trucha
+Disallow: /*trucho
+Disallow: /*pishing
+
+Disallow: /*chicas-prepago
+Disallow: /*chicas-prepagos
+Disallow: /*mujer-prepago
+Disallow: /*mujeres-prepagos
+Disallow: /*damas-prepago
+Disallow: /*chicos-prepagos
+Disallow: /*chico-prepago
+
+##Block - MOTORS
+Disallow: /*_KmsMin_
+Disallow: /*_KmsMax_
+Disallow: /*_kilometers_
+
+##Block - REAL_ESTATE
+Disallow: /*_SupMax_
+Disallow: /*_SupMin_
+
+##Block - EXPLICIT FILTER
+Disallow: /*_NoIndex_True
+
+##Block - EXTENSION
+Disallow: /*.php
+Disallow: /*.asp
+Disallow: /*.html
+Disallow: /*.js
+Disallow: /*.css
+Disallow: /*.jpg
+Disallow: /*.gif
+
+#Block - cianeto potassio
+Disallow: /*cianeto-de-potassio
+Disallow: /*cianeto-potassio
+Disallow: /*cianeto-de-potássio
+Disallow: /*cianeto-potássio
+Disallow: /*cianuro-de-potasio
+Disallow: /*cianuro-potasio
+
+##Block - URL INDEX
+Disallow: */www
+
+##Block - COMPETIDORS KEYWORDS MLA
+Disallow: /*garbarino
+Disallow: /*alamaula
+Disallow: /*autofoco
+Disallow: /*buen-acuerdo
+Disallow: /*buenacuerdo
+Disallow: /*olx
+Disallow: /*netshoes
+Disallow: /*?karpita
+Disallow: /*musimundo
+
+##Block - OTHER MLA
+Disallow: */cordoba-vende
+Disallow: */deportes-juegos-salon/quiniela-resultados-notitimba
+Disallow: */quiniela-resultados-notitimba
+Disallow: */venta-fe
+
+##Block - COMPETIDORS KEYWORDS MLM
+Disallow: /*anumex
+Disallow: /*vivastreet
+Disallow: /*locanto
+
+##Block - OTHER MLM
+Disallow: */monterrey
+Disallow: */segunda-mano
+Disallow: */segunda-mano-mexico
+Disallow: */vendo-bara
+
+##Block - COMPETIDORS KEYWORDS MLC
+Disallow: /*yapo
+
+##Block Brand
+Disallow: /*mercado-livre
+Disallow: /*mercadolivre
+Disallow: /*mercadopago
+Disallow: /*mercado-pago
+Disallow: /*mercadocredito
+Disallow: /*mercado-credito
+Disallow: /*mercado-clics
+Disallow: /*mercadoclics
+
+#Block - TMP
+
+Disallow: /*aviso-oportuno
+Disallow: /*abogado-siro-astolfi
+Disallow: /*siro-astolfi-abogado
+Disallow: /*dr-carlos-rotman-abogado
+Disallow: /*abogado-dr-carlos-rotman
+Disallow: /*estudio-bruchou-fernandez
+Disallow: /*jennifer-garcia
+Disallow: /*jeniffer-garcia
+Disallow: /*jenifer-garcia
+Disallow: /*megasur
+Disallow: /*fabiana-salabert
+Disallow: /*gaston-jarochevsky
+
+Disallow: /*ocasas.com.uy
+
+##Block - OFFSET
+Disallow: /*_Desde_
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##Block - Linha Chilena
+Disallow: /*chilena
+##Block - roubada
+Disallow: /*roubada
+
+Noindex: /*arma
+Noindex: /*jet-loader
+Noindex: /*machado
+Noindex: /*machadinha
+Noindex: /*nesta
+Noindex: /*besta
+Noindex: /*arco
+Noindex: /*flecha
+
+##Block - APARATOS MEDICOS Y DECODIFICADORES
+Noindex: /*regentes
+Noindex: /*regent
+Noindex: /*herbicidaroundup
+Noindex: /*tordon
+Noindex: /*randap
+Noindex: /*randp
+Noindex: /*vertimec
+Noindex: /*glifosato
+Noindex: /*cipermetrina
+Noindex: /*standak
+Noindex: /*agroneem
+Noindex: /*actara
+Noindex: /*atrazina
+Noindex: /*klap
+Noindex: /*quimioleo
+Noindex: /*gastoxin
+Noindex: /*kasumin
+Noindex: /*imidacloprid
+Noindex: /*quatermon
+Noindex: /*dipil
+Noindex: /*capivara
+Noindex: /*curso oab
+Noindex: /*cytotec
+Noindex: /*diazepam
+Noindex: /*fluoxetina
+Noindex: /*dualid
+Noindex: /*clonazepam
+Noindex: /*pramil
+Noindex: /*tadalafila
+Noindex: /*sindelafila
+Noindex: /*sibutramina
+Noindex: /*dianabol
+Noindex: /*dimagrir
+Noindex: /*stanozolol
+Noindex: /*trembolona
+Noindex: /*durateston
+Noindex: /*anfepramona
+Noindex: /*winstrol
+Noindex: /*lipostabil
+Noindex: /*desobesi
+Noindex: /*femproporex
+Noindex: /*oxandrolona
+Noindex: /*minoxidil
+Noindex: /*manzindol
+Noindex: /*redufit
+Noindex: /*canabidiol
+Noindex: /*phytoemagry
+Noindex: /*natu diet
+Noindex: /*melatonina
+Noindex: /*empréstimo
+Noindex: /*ecógrafos
+Noindex: /*desfibriladores
+Noindex: /*oxímetros
+Noindex: /*bisturi
+Noindex: /*olaplex
+Noindex: /*seguidores
+Noindex: /*iptv
+Noindex: /*agrotóxico
+Noindex: /*testosterona
+Noindex: /*dhea
+Noindex: /*prostituição
+Noindex: /*zoofilia
+Noindex: /*necrofilia
+Noindex: /*pedofilia
+Noindex: /*agenius
+Noindex: /*akbox
+Noindex: /*alma
+Noindex: /*alphasat
+Noindex: /*audisat
+Noindex: /*azamerica
+Noindex: /*azbox
+Noindex: /*azclass
+Noindex: /*azdox
+Noindex: /*azfox
+Noindex: /*azfree
+Noindex: /*azgold
+Noindex: /*azplay
+Noindex: /*azmax
+Noindex: /*azplus
+Noindex: /*azsat
+Noindex: /*azsky
+Noindex: /*azsmart
+Noindex: /*atto
+Noindex: /*boxat
+Noindex: /*btv
+Noindex: /*cinebox
+Noindex: /*cristor
+Noindex: /*dreamedia
+Noindex: /*duosat
+Noindex: /*eurosat
+Noindex: /*evolutionbox
+Noindex: /*freesky
+Noindex: /*hi-box
+Noindex: /*krosat
+Noindex: /*lexusbox
+Noindex: /*lexuz
+Noindex: /*megabox
+Noindex: /*miuibox
+Noindex: /*movisky
+Noindex: /*msat
+Noindex: /*mxq
+Noindex: /*mx9
+Noindex: /*nazabox
+Noindex: /*neonsat
+Noindex: /*netfree
+Noindex: /*netsat
+Noindex: /*newsat
+Noindex: /*panthersky
+Noindex: /*perabox
+Noindex: /*premiumbox
+Noindex: /*probox
+Noindex: /*poptv
+Noindex: /*qbus
+Noindex: /*qmda
+Noindex: /*omegabox
+Noindex: /*qqbox
+Noindex: /*satbox
+Noindex: /*showbox
+Noindex: /*skybox
+Noindex: /*skysat
+Noindex: /*smartbox
+Noindex: /*smartone
+Noindex: /*smbox
+Noindex: /*sonicview
+Noindex: /*starsat
+Noindex: /*stremiobox
+Noindex: /*superbox
+Noindex: /*tocombox
+Noindex: /*tocomcoax
+Noindex: /*tocomfree
+Noindex: /*tocomlink
+Noindex: /*tocomnet
+Noindex: /*tocomsat
+Noindex: /*uau
+Noindex: /*viubox
+Noindex: /*vivobox
+Noindex: /*volcanobox
+Noindex: /*voyeursat
+Noindex: /*yumibox
+Noindex: /*zatbox
+Noindex: /*dipirona
+Noindex: /*lancetador
+Noindex: /*freei
+Noindex: /*hd duo
+Noindex: /*i-box
+Noindex: /*i-link
+Noindex: /*q-star
+
+##Allow - Mercado-point
+Allow: /*mercadopago-point
+Allow: /*mercado-pago-point
+Allow: /*maquininha-mercado
+Allow: /*maquina-mercado
+Allow: /*maquineta-mercado
+Allow: /*maquininha-de-cartao-mercado
+Allow: /*maquina-de-cartao-mercado
+Allow: /*maquineta-de-cartao-mercado
+Allow: /*leitor-de-cartao-mercado
+
+##Block - microcelulares
+Disallow: /*micro-celular
+Disallow: /*microcelular
+Disallow: /*mini-celular
+Disallow: /*minicelular
+
+##Block - joesley
+Disallow: /*joesley
+
+##Block - pillowmed
+Disallow: /*pillowmed
+
+#Block - corda-para-suicidio & corda-suicidio & cordas-para-suicidio
+Disallow: /*corda-suicidio
+Disallow: /*corda-para-suicidio
+Disallow: /*cordas-para-suicidio
+Disallow: /*cordas-suicidio
+
+##Redirects
+Disallow: *9993244-AMLB
+
+

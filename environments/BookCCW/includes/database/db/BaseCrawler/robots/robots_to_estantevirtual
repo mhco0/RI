@@ -1,4 +1,22 @@
-{
-    "link": "https://www.estantevirtual.com.br",
-    "content": "User-agent: *\r\nDisallow: /mod_perl/\r\nDisallow: /cgi-bin/\r\nAllow: /cgi-bin/conteudo.cgi*\r\nDisallow: /public/\r\nAllow: /public/sitemaps*\r\nAllow: /imagens/\r\nDisallow: /denuncie*\r\nDisallow: /qualificarvendedor\r\nDisallow: /carrinho*\r\nDisallow: /carrinho-remover*\r\nDisallow: /carrinho-adicionar*\r\nDisallow: /comprar\r\nDisallow: /compra-realizada\r\nDisallow: /lista-de-desejos*\r\nDisallow: /autor+ou+titulo/\r\n\r\nUser-agent: Googlebot-image\r\nDisallow:\r\nUser-agent: AdsBot-Google\r\nDisallow:\r\n\r\n"
-}
+User-agent: *
+Disallow: /mod_perl/
+Disallow: /cgi-bin/
+Allow: /cgi-bin/conteudo.cgi*
+Disallow: /public/
+Allow: /public/sitemaps*
+Allow: /imagens/
+Disallow: /denuncie*
+Disallow: /qualificarvendedor
+Disallow: /carrinho*
+Disallow: /carrinho-remover*
+Disallow: /carrinho-adicionar*
+Disallow: /comprar
+Disallow: /compra-realizada
+Disallow: /lista-de-desejos*
+Disallow: /autor+ou+titulo/
+
+User-agent: Googlebot-image
+Disallow:
+User-agent: AdsBot-Google
+Disallow:
+

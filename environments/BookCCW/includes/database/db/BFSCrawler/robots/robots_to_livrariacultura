@@ -1,4 +1,26 @@
-{
-    "link": "https://www3.livrariacultura.com.br",
-    "content": "# Disallow all crawlers access to certain pages. \r\n User-agent: * \r\n\r\n Disallow: / \r\n Disallow: /img/* \r\n Disallow: /account/* \r\n Disallow: /login/* \r\n Disallow: /checkout/* \r\n Disallow: /busca/* \r\n Disallow: /quick-view/* \r\n Disallow: /espiar/* \r\n Noindex: /buscapagina/* \r\n\r\nUser-agent: Googlebot\r\nAllow: \r\n\r\nUser-agent: Googlebot-Image\r\nAllow: \r\n\r\nUser-agent: Mediapartners-Google\r\nAllow: \r\n\r\nUser-agent: Adsbot-Google\r\nAllow: \r\n\r\n Sitemap: https://www.livrariacultura.com.br/sitemap.xml"
-}
+# Disallow all crawlers access to certain pages. 
+ User-agent: * 
+
+ Disallow: / 
+ Disallow: /img/* 
+ Disallow: /account/* 
+ Disallow: /login/* 
+ Disallow: /checkout/* 
+ Disallow: /busca/* 
+ Disallow: /quick-view/* 
+ Disallow: /espiar/* 
+ Noindex: /buscapagina/* 
+
+User-agent: Googlebot
+Allow: 
+
+User-agent: Googlebot-Image
+Allow: 
+
+User-agent: Mediapartners-Google
+Allow: 
+
+User-agent: Adsbot-Google
+Allow: 
+
+ Sitemap: https://www.livrariacultura.com.br/sitemap.xml

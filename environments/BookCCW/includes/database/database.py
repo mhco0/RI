@@ -39,3 +39,7 @@ class Database:
                 "content": db_obj.content}
             
             json.dump(obj, file, ensure_ascii=False, indent=4)
+
+    def save_robots_file(self, filename, text):
+        with open(filename, 'w', encoding='utf-8') as file:
+            file.write(text)

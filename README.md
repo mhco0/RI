@@ -20,7 +20,7 @@ $ python bookccw <crawler_name>
 , onde `crawler_name` é o nome dos crawlers disponíveis.
 
 ### Crawlers Disponíveis
-- [ ] BaseCrawler
+- [x] BaseCrawler
 - [ ] BFSCrawler
 - [ ] HeuristicCrawler
 
@@ -38,3 +38,6 @@ Os crawlers marcados são os que foram testados e estão funcionando na branch `
 ## Resolução de Problemas
 
 * [Problema de acesso com o User-Agent](https://stackoverflow.com/questions/62599036/python-requests-is-slow-and-takes-very-long-to-complete-http-or-https-request)
+* [Criando o parser para o robots.txt](https://stackoverflow.com/questions/60800033/parse-allowed-and-disallowed-parts-of-robots-txt-file)
+* [Robots.txt std](http://www.robotstxt.org/robotstxt.html)
+* [Syntax obscura do Robots.txt](https://www.ctrl.blog/entry/arcane-robotstxt-directives.html)

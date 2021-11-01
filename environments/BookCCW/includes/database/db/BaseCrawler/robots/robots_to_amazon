@@ -1,4 +1,73 @@
-{
-    "link": "https://www.amazon.com.br",
-    "content": "User-agent: *\nAllow: /*/dp/\nAllow: /gp/adlp/\nAllow: /gp/aw/kindle/first\nAllow: /gp/aw/mom/signup\nAllow: /gp/aw/ybh\nAllow: /gp/baby-reg\nAllow: /gp/cobrandcard/marketing.html\nAllow: /gp/coins/earn\nAllow: /gp/communication-manager/inbox.html\nAllow: /gp/css/gc/payment/redeem-gc-balance\nAllow: /gp/css/homepage.html\nAllow: /gp/css/order-history\nAllow: /gp/digital/ep-landing-page\nAllow: /gp/digital/fiona/kcp-landing-page\nAllow: /gp/drive/app-download\nAllow: /gp/goldbox\nAllow: /gp/help\nAllow: /gp/history\nAllow: /gp/mom/signup\nAllow: /gp/prime/pipeline/prime_gifting_landing\nAllow: /gp/product/\nAllow: /gp/sign-in.html\nAllow: /gp/tradein/your-account\nAllow: /gp/video/library\nAllow: /gp/video/watchlist\nAllow: /gp/vine/help\nAllow: /help/kindlecloudreader\nAllow: /help/kindlefire\nAllow: /iss/credit/rewardscardmember\nAllow: /iss/credit/storecardmember\nAllow: /kindlefirst\nAllow: /kindlepersonaldocuments\nAllow: /manageyourkindle\nAllow: /mn/dcw/myx.html\nAllow: /mytv\nAllow: /oc/dash-button\nAllow: /returns\nAllow: /robots.txt\nAllow: /s/\nAllow: /s?\nAllow: /*/s/\nAllow: /*/s?\nAllow: /sitemaps\nAllow: /storecard\nAllow: /gp/aw/d/\nAllow: /your-account\nAllow: /your-orders\nDisallow: /gp/help/reports/infringement/jquery/handle-notice-submit.html\nDisallow: /gp/help/customer/handler/handle-email-submit.html\nDisallow: /gp/ask-widget/askWidget\nDisallow: /gp/cart \nDisallow: /gp/flex \nDisallow: /gp/product/e-mail-friend \nDisallow: /gp/product/product-availability \nDisallow: /gp/product/rate-this-item\nDisallow: /ss/customer-reviews/lighthouse/\nDisallow: /hz/leaderboard/top-reviewers/\nDisallow: /hz/leaderboard/hall-of-fame/\nDisallow: /review/top-reviewers/\nDisallow: /review/top-reviewers\nDisallow: /review/hall-of-fame\nDisallow: /reviews/top-reviewers/\nDisallow: /reviews/top-reviewers\nDisallow: /reviews/hall-of-fame\nDisallow: /hz/help/contact/*/message/$\nDisallow: /-/\nDisallow: /gp/aw/shoppingAids/\nDisallow: /hz/contact-us/ajax/initiate-trusted-contact/\n\nUser-agent: EtaoSpider\nDisallow: /\n\n"
-}
+User-agent: *
+Allow: /*/dp/
+Allow: /gp/adlp/
+Allow: /gp/aw/kindle/first
+Allow: /gp/aw/mom/signup
+Allow: /gp/aw/ybh
+Allow: /gp/baby-reg
+Allow: /gp/cobrandcard/marketing.html
+Allow: /gp/coins/earn
+Allow: /gp/communication-manager/inbox.html
+Allow: /gp/css/gc/payment/redeem-gc-balance
+Allow: /gp/css/homepage.html
+Allow: /gp/css/order-history
+Allow: /gp/digital/ep-landing-page
+Allow: /gp/digital/fiona/kcp-landing-page
+Allow: /gp/drive/app-download
+Allow: /gp/goldbox
+Allow: /gp/help
+Allow: /gp/history
+Allow: /gp/mom/signup
+Allow: /gp/prime/pipeline/prime_gifting_landing
+Allow: /gp/product/
+Allow: /gp/sign-in.html
+Allow: /gp/tradein/your-account
+Allow: /gp/video/library
+Allow: /gp/video/watchlist
+Allow: /gp/vine/help
+Allow: /help/kindlecloudreader
+Allow: /help/kindlefire
+Allow: /iss/credit/rewardscardmember
+Allow: /iss/credit/storecardmember
+Allow: /kindlefirst
+Allow: /kindlepersonaldocuments
+Allow: /manageyourkindle
+Allow: /mn/dcw/myx.html
+Allow: /mytv
+Allow: /oc/dash-button
+Allow: /returns
+Allow: /robots.txt
+Allow: /s/
+Allow: /s?
+Allow: /*/s/
+Allow: /*/s?
+Allow: /sitemaps
+Allow: /storecard
+Allow: /gp/aw/d/
+Allow: /your-account
+Allow: /your-orders
+Disallow: /gp/help/reports/infringement/jquery/handle-notice-submit.html
+Disallow: /gp/help/customer/handler/handle-email-submit.html
+Disallow: /gp/ask-widget/askWidget
+Disallow: /gp/cart 
+Disallow: /gp/flex 
+Disallow: /gp/product/e-mail-friend 
+Disallow: /gp/product/product-availability 
+Disallow: /gp/product/rate-this-item
+Disallow: /ss/customer-reviews/lighthouse/
+Disallow: /hz/leaderboard/top-reviewers/
+Disallow: /hz/leaderboard/hall-of-fame/
+Disallow: /review/top-reviewers/
+Disallow: /review/top-reviewers
+Disallow: /review/hall-of-fame
+Disallow: /reviews/top-reviewers/
+Disallow: /reviews/top-reviewers
+Disallow: /reviews/hall-of-fame
+Disallow: /hz/help/contact/*/message/$
+Disallow: /-/
+Disallow: /gp/aw/shoppingAids/
+Disallow: /hz/contact-us/ajax/initiate-trusted-contact/
+
+User-agent: EtaoSpider
+Disallow: /
+

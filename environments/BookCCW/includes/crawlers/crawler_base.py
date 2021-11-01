@@ -3,38 +3,120 @@ import includes.database.database as db
 import requests
 import socket
 import random
+import re
 from bs4 import BeautifulSoup
 
 class RobotsParser:
     text = ""
-    _allowed = {}
-    _disallowed = {}
+    permitions = {}
     _request_rate = {}
     _crawl_delay = {}
     _site_maps = []
 
     def __init__(self, text):
         self.text = text
+        self.permitions = {"*": {"Allowed": [], "Disallowed": []}}
         self.parse()
 
     def set_text(self, text):
         self.text = text
+        self._request_rate = {}
+        self._crawl_delay = {}
+        self._site_maps = []
+        self.permitions = {"*": {"Allowed": [], "Disallowed": []}}
+        self.parse()
     
     def parse(self):
-        for line in self.text.split("\n"):
-            print(line)
+        # User-agents can be chained so i need to keep all in a same chuck to save allowed and disallowed urls
+        user_agents = []
+        new_chuck = True
 
+        for line in self.text.split("\n"):
+            # Removing some white spaces like " Disallow: /    \n"
+            line = line.strip()
+
+            if len(line) > 0:
+                tag_and_value = line.split(":")
+                
+                tag = tag_and_value[0].strip() # Here we have "Allow", "Disallow", "User-agent", etc
+                
+                if (len(tag_and_value) > 1):
+                    value = tag_and_value[1].strip() # Here we have the "url_path # Some possible comment"
+                else:
+                    value = ""
+
+                if tag.startswith("User-agent"):
+                    if new_chuck:
+                        user_agents = []
+                        new_chuck = False
+                    
+                    user_agents.append(value)
+                else:
+                    new_chuck = True
+
+                    if tag.startswith('Allow'):
+                        possible_url = value.split(" ") # Removes possible spaces with comments
+                        if len(possible_url) >= 1:
+                            possible_url = possible_url[0]
+                            for agent in user_agents:
+                                if agent not in self.permitions:
+                                    self.permitions[agent] = {"Allowed": [], "Disallowed": []}
+                                self.permitions[agent]["Allowed"].append(possible_url)   
+                
+                    if tag.startswith('Disallow'):
+                        possible_url = value.split(" ") # Removes possible spaces with comments
+                        if len(possible_url) >= 1:
+                            possible_url = possible_url[0]
+                            for agent in user_agents:
+                                if agent not in self.permitions:
+                                    self.permitions[agent] = {"Allowed": [], "Disallowed": []}
+                                self.permitions[agent]["Disallowed"].append(possible_url)    
+
+                    if tag.startswith("Crawl-delay"):
+                        possible_delay = value.split(" ") # Removes possible spaces with comments
+                        if len(possible_delay) >= 1:
+                            possible_delay = possible_delay[0]
+                            for agent in user_agents:
+                                self._crawl_delay[agent] = float(possible_delay)   
+
+                    if tag.startswith("Request-rate"):
+                        possible_rate = value.split(" ") # Removes possible spaces with comments
+                        if len(possible_rate) >= 1:
+                            possible_rate = possible_rate[0]
+                            for agent in user_agents:
+                                self._request_rate[agent] = possible_rate 
+
+                    if tag.startswith("Sitemaps"):
+                            possible_url = value.split(" ") # Removes possible spaces with comments
+                            if len(possible_url) >= 1:
+                                possible_url = possible_url[0]
+                                self._site_maps.append(possible_url) 
+
+                                
     def can_fetch(self, user_agent, path):
+        for (agent, permition) in self.permitions.items():
+            if agent == user_agent:
+                for url in permition["Disallowed"]:
+                    pattern = re.compile(url.replace("*", ".*"))
+                    if pattern.match(path):
+                        print(url)
+                        return False
         return True
 
     def site_maps(self):
-        return []
+        return self._site_maps
 
     def crawl_delay(self, user_agent):
-        return 0
+        if user_agent in self._crawl_delay:
+            return self._crawl_delay[user_agent]
+        else:
+            return None
     
     def request_rate(self, user_agent):
-        return 0
+        if user_agent in self._request_rate:
+            return self._request_rate[user_agent]
+        else:
+            return None
 
 class BaseCrawler:
     name = "BaseCrawler"
@@ -73,7 +155,7 @@ class BaseCrawler:
         for url in urls:
             headers = {"User-Agent": self.get_fake_user_agent()}
             site = requests.get(url + "/robots.txt", headers=headers)
-            self.database.save_file(db.DatabaseObj(self.path_database + "/"+ self.name +"/robots/robots_to_" + str(utils.get_domain_main_name(url)), url, site.text))
+            self.database.save_robots_file(self.path_database + "/"+ self.name +"/robots/robots_to_" + str(utils.get_domain_main_name(url)), site.text)
             self.robots_parser.append(RobotsParser(site.text))
 
     def crawl(self):

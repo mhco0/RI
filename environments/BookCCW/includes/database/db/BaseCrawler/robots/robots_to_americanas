@@ -1,4 +1,56 @@
-{
-    "link": "https://www.americanas.com.br",
-    "content": "User-agent: *\n \nDisallow: /AcomProd\nDisallow: /akam\nDisallow: /artista\nDisallow: /avaliacao\nDisallow: /cgi-bin\nDisallow: /denuncie\nDisallow: /estaticapop\nDisallow: /garantia\nDisallow: /incluir_prime\nDisallow: /lasanovo\nDisallow: /newsletter\nDisallow: /parceiros\nDisallow: /portal\nDisallow: /product-description\nDisallow: /search\nDisallow: /uploads\nDisallow: /*cage.html\n \nDisallow: *{\"id\":*{\"id\":*{\"id\":*{\"id\":*\nDisallow: */*filtro=*\nDisallow: */f/*/*/\nDisallow: */g/\nDisallow: */tag-imutavel*\n \nDisallow: /busca/*/c/\nDisallow: /busca/*/f/\nDisallow: /busca/*/l/\nDisallow: /busca/*/m/\n \nDisallow: /hotsite/*/c/\nDisallow: /hotsite/*/f/\nDisallow: /hotsite/*/l/\nDisallow: /hotsite/*/m/\n \nDisallow: /especial/*/c/\nDisallow: /especial/*/f/\nDisallow: /especial/*/l/\nDisallow: /especial/*/m/\n \nDisallow: /landingpage/*/c/\nDisallow: /landingpage/*/f/\nDisallow: /landingpage/*/l/\nDisallow: /landingpage/*/m/\n \nDisallow: /marca/*/c/\nDisallow: /marca/*/f/\nDisallow: /marca/*/l/\n \nDisallow: /lojista/*/c/\nDisallow: /lojista/*/f/\nDisallow: /lojista/*/m/\n \n#1\n#Wed Dec 02 12:00:00 2020"
-}
+User-agent: *
+ 
+Disallow: /AcomProd
+Disallow: /akam
+Disallow: /artista
+Disallow: /avaliacao
+Disallow: /cgi-bin
+Disallow: /denuncie
+Disallow: /estaticapop
+Disallow: /garantia
+Disallow: /incluir_prime
+Disallow: /lasanovo
+Disallow: /newsletter
+Disallow: /parceiros
+Disallow: /portal
+Disallow: /product-description
+Disallow: /search
+Disallow: /uploads
+Disallow: /*cage.html
+ 
+Disallow: *{"id":*{"id":*{"id":*{"id":*
+Disallow: */*filtro=*
+Disallow: */f/*/*/
+Disallow: */g/
+Disallow: */tag-imutavel*
+ 
+Disallow: /busca/*/c/
+Disallow: /busca/*/f/
+Disallow: /busca/*/l/
+Disallow: /busca/*/m/
+ 
+Disallow: /hotsite/*/c/
+Disallow: /hotsite/*/f/
+Disallow: /hotsite/*/l/
+Disallow: /hotsite/*/m/
+ 
+Disallow: /especial/*/c/
+Disallow: /especial/*/f/
+Disallow: /especial/*/l/
+Disallow: /especial/*/m/
+ 
+Disallow: /landingpage/*/c/
+Disallow: /landingpage/*/f/
+Disallow: /landingpage/*/l/
+Disallow: /landingpage/*/m/
+ 
+Disallow: /marca/*/c/
+Disallow: /marca/*/f/
+Disallow: /marca/*/l/
+ 
+Disallow: /lojista/*/c/
+Disallow: /lojista/*/f/
+Disallow: /lojista/*/m/
+ 
+#1
+#Wed Dec 02 12:00:00 2020
