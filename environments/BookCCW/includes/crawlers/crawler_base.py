@@ -99,7 +99,6 @@ class RobotsParser:
                 for url in permition["Disallowed"]:
                     pattern = re.compile(url.replace("*", ".*"))
                     if pattern.match(path):
-                        print(url)
                         return False
         return True
 
