@@ -245,7 +245,8 @@ def culturaWrapper(page) -> Book:
     return book
 
 
-def listAllBooks():
+def getAllBooks():
+    print("getting books")
     directories = ['americanas', 'cultura', 'curitiba', 'magazine',
                    'mercadoLivre', 'saraiva', 'shoptime', 'submarino', 'travessa', 'vila']
     wrappers = {
@@ -260,14 +261,24 @@ def listAllBooks():
         'travessa': travessaWrapper,
         'vila': vilaWrapper
     }
+    books = []
     for directory in directories:
-        print(
-            f'------------------- {directory.capitalize()} -----------------')
         filenames = Utils.getFilenames(BOOKS_PATH + directory)
         for filename in filenames:
             page = Utils.readFile(BOOKS_PATH + directory + f'/{filename}')
-            print(wrappers[directory](page))
-        print(f'------------------------------------------\n')
+            data = wrappers[directory](page)
+            book = {
+                'author': data.author,
+                'publisher': data.publisher,
+                'isbn': data.isbn,
+                'language': data.language,
+                'domain': directory
+
+            }
+            books.append(book)
+    return books
 
 
-listAllBooks()
+books = getAllBooks()
+print(len(books))
+Utils.writeJsonFile('./books.json', books)
