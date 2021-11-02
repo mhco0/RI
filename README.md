@@ -41,3 +41,5 @@ Os crawlers marcados são os que foram testados e estão funcionando na branch `
 * [Criando o parser para o robots.txt](https://stackoverflow.com/questions/60800033/parse-allowed-and-disallowed-parts-of-robots-txt-file)
 * [Robots.txt std](http://www.robotstxt.org/robotstxt.html)
 * [Syntax obscura do Robots.txt](https://www.ctrl.blog/entry/arcane-robotstxt-directives.html)
+* [InvalidSchema no Requests.get](https://stackoverflow.com/questions/30770213/no-schema-supplied-and-other-errors-with-using-requests-get)
+* [URL valida](https://stackoverflow.com/questions/827557/how-do-you-validate-a-url-with-a-regular-expression-in-python)
