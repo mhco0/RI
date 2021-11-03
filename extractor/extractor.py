@@ -246,7 +246,7 @@ def culturaWrapper(page) -> Book:
 
 
 def getAllBooks():
-    print("getting books")
+    print("getting books...")
     directories = ['americanas', 'cultura', 'curitiba', 'magazine',
                    'mercadoLivre', 'saraiva', 'shoptime', 'submarino', 'travessa', 'vila']
     wrappers = {

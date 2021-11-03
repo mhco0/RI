@@ -1,0 +1,242 @@
+[
+    {
+        "Editora": "Suma",
+        "ISBN-13": "9788556510785",
+        "Autor": "George R.R. Martin",
+        "Idioma": "Português",
+        "domain": "americanas"
+    },
+    {
+        "Editora": "Suma",
+        "ISBN-13": "9788556510761",
+        "Autor": "George R.R. Martin",
+        "Idioma": "Português",
+        "domain": "americanas"
+    },
+    {
+        "Editora": "Suma",
+        "ISBN-13": "9788556510792",
+        "Autor": "George R.R. Martin",
+        "Idioma": "Português",
+        "domain": "americanas"
+    },
+    {
+        "Editora": "Seguinte",
+        "ISBN-13": "9788555340680",
+        "Autor": "Alwyn Hamilton",
+        "Idioma": "Português",
+        "domain": "americanas"
+    },
+    {
+        "Editora": "Companhia das Letras",
+        "ISBN-13": "9788535932874",
+        "Autor": "Djamila Ribeiro",
+        "Idioma": "Português",
+        "domain": "americanas"
+    },
+    {
+        "Editora": "ARQUEIRO",
+        "ISBN": "8580413079",
+        "Idioma": "PORTUGUÊS",
+        "Autor": "JULIA QUINN",
+        "domain": "cultura"
+    },
+    {
+        "Editora": "COMPANHIA DAS LETRAS",
+        "ISBN": "8535933921",
+        "Idioma": "PORTUGUÊS",
+        "Autor": "YUVAL NOAH HARARI",
+        "domain": "cultura"
+    },
+    {
+        "Editora": "OBJETIVA",
+        "ISBN": "853900383X",
+        "Idioma": "PORTUGUÊS",
+        "Autor": "DANIEL KAHNEMAN",
+        "domain": "cultura"
+    },
+    {
+        "Editora": "TODAVIA",
+        "Autor": "ITAMAR VIEIRA JUNIOR",
+        "EAN13": "9780002975179",
+        "Idioma": "PORTUGUES",
+        "domain": "curitiba"
+    },
+    {
+        "Editora": "BEST SELLER LV",
+        "Autor": "MARK MANSON / WILL SMITH",
+        "EAN13": "9788501305084",
+        "Idioma": "PORTUGUES",
+        "ISBN": "8501305081",
+        "domain": "curitiba"
+    },
+    {
+        "Editora": "OUTRO PLANETA",
+        "Autor": "GABRIEL DEARO",
+        "EAN13": "9786555355215",
+        "Idioma": "PORTUGUES",
+        "ISBN": "6555355212",
+        "domain": "curitiba"
+    },
+    {
+        "Marca": "       buzz     ",
+        "Idioma": "       Português\n     ",
+        "ISBN": "       9786589623045     ",
+        "domain": "magazine"
+    },
+    {
+        "Autor": "       Evans Welch, Jenna, Faro, Joana, Pinheiro, Flora, Diniz, Viviane     ",
+        "domain": "magazine"
+    },
+    {
+        "Marca": "       rocco     ",
+        "Idioma": "       Português     ",
+        "ISBN": "       9786555320343\n     ",
+        "domain": "magazine"
+    },
+    {
+        "Autor": "Vários Autores",
+        "Idioma": "Português",
+        "Editora": "GRUPO SARAIVA EDUCAÇÃO",
+        "Marca": "GRUPO SARAIVA EDUCAÇÃO",
+        "ISBN": "Páginas",
+        "domain": "mercadoLivre"
+    },
+    {
+        "Autor": "Robert Kiyosaki",
+        "Idioma": "Português",
+        "Editora": "Alta Books",
+        "ISBN": "É kit",
+        "domain": "mercadoLivre"
+    },
+    {
+        "Autor": "Napoleon Hill",
+        "Idioma": "Português",
+        "Editora": "Fundamento",
+        "ISBN": "Coleção do livro",
+        "domain": "mercadoLivre"
+    },
+    {
+        "Autor": "Lewis Carroll",
+        "ISBN": "9788584424481",
+        "Marca": "Pandorga",
+        "domain": "saraiva"
+    },
+    {
+        "Autor": "Saraiva Educação",
+        "ISBN": "9786555597943",
+        "Idioma": "Português",
+        "Marca": "Saraiva Jur",
+        "domain": "saraiva"
+    },
+    {
+        "Autor": "Kiyosaki,Robert T.",
+        "ISBN": "9788550801483",
+        "Idioma": "Português",
+        "Marca": "Alta Books",
+        "domain": "saraiva"
+    },
+    {
+        "Editora": "Seguinte",
+        "ISBN-13": "9788555340550",
+        "Autor": "Victoria Aveyard",
+        "Idioma": "Português",
+        "domain": "shoptime"
+    },
+    {
+        "Editora": "Seguinte",
+        "ISBN-13": "9788565765695",
+        "Autor": "Victoria Aveyard",
+        "Idioma": "Português",
+        "domain": "shoptime"
+    },
+    {
+        "Editora": "Paralela",
+        "ISBN-13": "9788584391073",
+        "Autor": "Lauren Layne",
+        "Idioma": "Português",
+        "domain": "shoptime"
+    },
+    {
+        "Editora": "Intrínseca",
+        "ISBN-13": "9788551003312",
+        "Autor": "Rick Riordan",
+        "Idioma": "Português",
+        "domain": "shoptime"
+    },
+    {
+        "Editora": "Seguinte",
+        "ISBN-13": "9788565765480",
+        "Autor": "E. Lockhart",
+        "Idioma": "Português",
+        "domain": "shoptime"
+    },
+    {
+        "Editora": "Martin Claret",
+        "ISBN-13": "9788544001257",
+        "Autor": "Miguel de Cervantes",
+        "Idioma": "Português",
+        "domain": "submarino"
+    },
+    {
+        "Editora": "Seguinte",
+        "ISBN-13": "9788565765350",
+        "Autor": "Benjamin Alire Sáenz",
+        "Idioma": "Português",
+        "domain": "submarino"
+    },
+    {
+        "Editora": "Seguinte",
+        "ISBN-13": "9788555340444",
+        "Autor": "Benjamin Alire Sáenz",
+        "Idioma": "Português",
+        "domain": "submarino"
+    },
+    {
+        "Editora": "Companhia das Letras",
+        "ISBN-13": "9788535929225",
+        "Autor": "Liev Tolstoi",
+        "Idioma": "Português",
+        "domain": "submarino"
+    },
+    {
+        "Editora": "Penguin",
+        "ISBN-13": "9788582850671",
+        "Autor": "Charles Dickens",
+        "Idioma": "Português",
+        "domain": "submarino"
+    },
+    {
+        "AUTOR": "",
+        "domain": "travessa"
+    },
+    {
+        "AUTOR": "",
+        "domain": "travessa"
+    },
+    {
+        "AUTOR": "",
+        "domain": "travessa"
+    },
+    {
+        "Autor": "Chico Felitti",
+        "ISBN": "9786556922027",
+        "Editora": "Todavia",
+        "Idioma": "Português",
+        "domain": "vila"
+    },
+    {
+        "Autor": "Deepak Chopra",
+        "ISBN": "9786555321524",
+        "Editora": "Rocco",
+        "Idioma": "Português",
+        "domain": "vila"
+    },
+    {
+        "Autor": "Aline Bei",
+        "ISBN": "9786559210411",
+        "Editora": "Companhia das Letras",
+        "Idioma": "Português",
+        "domain": "vila"
+    }
+]
