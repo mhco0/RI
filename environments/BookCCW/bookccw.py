@@ -10,14 +10,13 @@ DATABASE_PATH = "includes/database/db"
 PAGES_TO_DOWNLOAD = 1000
 
 if __name__ == "__main__":
-    http.client.HTTPConnection.debuglevel = 1
-
     # You must initialize logging, otherwise you'll not see debug output.
-    logging.basicConfig()
-    logging.getLogger().setLevel(logging.DEBUG)
-    requests_log = logging.getLogger("requests.packages.urllib3")
-    requests_log.setLevel(logging.DEBUG)
-    requests_log.propagate = True
+    #http.client.HTTPConnection.debuglevel = 1
+    #logging.basicConfig()
+    #logging.getLogger().setLevel(logging.DEBUG)
+    #requests_log = logging.getLogger("requests.packages.urllib3")
+    #requests_log.setLevel(logging.DEBUG)
+    #requests_log.propagate = True
 
     if len(sys.argv) > 1:
         crawler_type = sys.argv[1]

@@ -12,7 +12,7 @@ class BFSCrawler(BaseCrawler):
         for i in range(len(self.domains)):
             domain_main_name = str(utils.get_domain_main_name(self.domains[i]))
             self.database.expand_db("/" + self.name + "/" + domain_main_name)
-            headers = {"User-Agent": 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'}
+            headers = {"User-Agent": self.get_fake_user_agent()}
             self.download_pages = 0
             self.url_queue = []
             self.url_queue.append(self.domains[i])
@@ -25,18 +25,16 @@ class BFSCrawler(BaseCrawler):
                     continue
 
                 print(front_url)
+                
                 try:
                     page = session.get(front_url, headers=headers, timeout=5)
                 except:
                     continue
-                print(page)
-                print(page.headers)
-                print(page.content)
-                print(page.text)
+
                 if(page.status_code == 200 and self.is_html(page)):
                     soup = BeautifulSoup(page.content, 'html.parser')
 
-                    print(soup.find_all('a'))
+                    
                     for link in soup.find_all('a'):                                    
                         new_url = link.get('href')
                         if new_url != None:
