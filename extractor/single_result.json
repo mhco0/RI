@@ -70,70 +70,70 @@
         "domain": "americanas"
     },
     {
-        "author": "",
+        "author": "J. K. ROWLING",
         "publisher": "ROCCO -",
         "isbn": "8532530435",
         "language": "PORTUGUÊS",
         "domain": "cultura"
     },
     {
-        "author": "",
+        "author": "JULIA QUINN",
         "publisher": "ARQUEIRO",
         "isbn": "8580413079",
         "language": "PORTUGUÊS",
         "domain": "cultura"
     },
     {
-        "author": "",
+        "author": "HAL ELROD",
         "publisher": "BEST SELLER",
         "isbn": "8576849941",
         "language": "PORTUGUÊS",
         "domain": "cultura"
     },
     {
-        "author": "",
+        "author": "BARACK OBAMA",
         "publisher": "COMPANHIA DAS LETRAS",
         "isbn": "8535933964",
         "language": "PORTUGUÊS",
         "domain": "cultura"
     },
     {
-        "author": "",
+        "author": "LAURENTINO GOMES",
         "publisher": "GLOBO LIVROS",
         "isbn": "6555670398",
         "language": "PORTUGUÊS",
         "domain": "cultura"
     },
     {
-        "author": "",
+        "author": "LORI GOTTLIEB",
         "publisher": "VESTIGIO",
         "isbn": "6599039812",
         "language": "PORTUGUÊS",
         "domain": "cultura"
     },
     {
-        "author": "",
+        "author": "GREG MCKEOWN",
         "publisher": "SEXTANTE",
         "isbn": "8543102146",
         "language": "PORTUGUÊS",
         "domain": "cultura"
     },
     {
-        "author": "",
+        "author": "CAROL DWECK",
         "publisher": "OBJETIVA",
         "isbn": "8547000240",
         "language": "PORTUGUÊS",
         "domain": "cultura"
     },
     {
-        "author": "",
+        "author": "CLARISSA PINKOLA ESTES",
         "publisher": "ROCCO -",
         "isbn": "853252978X",
         "language": "PORTUGUÊS",
         "domain": "cultura"
     },
     {
-        "author": "",
+        "author": "NAPOLEON HILL",
         "publisher": "CDG EDITORA",
         "isbn": "8568014003",
         "language": "PORTUGUÊS",
@@ -219,7 +219,7 @@
     {
         "author": "Orwell, George, Lima, Karla",
         "publisher": "Ciranda Cultural",
-        "isbn": "",
+        "isbn": "7908312104603",
         "language": "Português, Inglês",
         "domain": "magazine"
     },
@@ -233,35 +233,35 @@
     {
         "author": "Vieira, Paulo",
         "publisher": "Gente",
-        "isbn": "",
+        "isbn": "9788545202219",
         "language": "Português",
         "domain": "magazine"
     },
     {
         "author": "Maud Montgomery, Lucy, Bonaldi, Rafael, Welcman, Max, Sette Camara, João, Mayumi, Beatriz",
         "publisher": "Ciranda Cultural",
-        "isbn": "",
+        "isbn": "7908312103828",
         "language": "Português",
         "domain": "magazine"
     },
     {
         "author": "Hill, Napoleon",
         "publisher": "Citadel Editora",
-        "isbn": "",
+        "isbn": "9788568014004",
         "language": "Português, Inglês",
         "domain": "magazine"
     },
     {
         "author": "Vieira, Paulo, de Sousa, Maurício",
         "publisher": "Gente",
-        "isbn": "9788545202660",
+        "isbn": "9786555440270",
         "language": "Português, Português",
         "domain": "magazine"
     },
     {
         "author": "Zusak, Markus, Ribeiro, Vera",
         "publisher": "Intrínseca",
-        "isbn": "",
+        "isbn": "9788598078175",
         "language": "Português",
         "domain": "magazine"
     },
@@ -282,70 +282,70 @@
     {
         "author": "Autor: T. Harv Eker",
         "publisher": "SEXTANTE",
-        "isbn": "",
+        "isbn": "É kit",
         "language": "Português",
         "domain": "mercadoLivre"
     },
     {
         "author": "Vários Autores",
         "publisher": "GRUPO SARAIVA EDUCAÇÃO",
-        "isbn": "",
+        "isbn": "mês??",
         "language": "Português",
         "domain": "mercadoLivre"
     },
     {
         "author": "Lima, Branca Alves De",
         "publisher": "Edipro",
-        "isbn": "",
+        "isbn": "É kit",
         "language": "Português",
         "domain": "mercadoLivre"
     },
     {
         "author": "Publicações Pão Diário",
         "publisher": "Pão Diário",
-        "isbn": "",
+        "isbn": "envio",
         "language": "Português",
         "domain": "mercadoLivre"
     },
     {
         "author": "Autor: Brené Brown",
         "publisher": "SEXTANTE",
-        "isbn": "",
+        "isbn": "envio",
         "language": "Português",
         "domain": "mercadoLivre"
     },
     {
         "author": "Napoleon Hill",
         "publisher": "Fundamento",
-        "isbn": "",
+        "isbn": "É kit",
         "language": "Português",
         "domain": "mercadoLivre"
     },
     {
         "author": "Mark Douglas",
         "publisher": "Bookout",
-        "isbn": "",
+        "isbn": "envio",
         "language": "Português",
         "domain": "mercadoLivre"
     },
     {
         "author": "Robert Kiyosaki",
         "publisher": "Alta Books",
-        "isbn": "",
+        "isbn": "É kit",
         "language": "Português",
         "domain": "mercadoLivre"
     },
     {
         "author": "Autor: Eckhart Tolle",
         "publisher": "SEXTANTE",
-        "isbn": "",
+        "isbn": "É kit",
         "language": "Português",
         "domain": "mercadoLivre"
     },
     {
         "author": "Adaptação da obra de: Mark Manson",
         "publisher": "INTRINSECA",
-        "isbn": "",
+        "isbn": "envio",
         "language": "Português",
         "domain": "mercadoLivre"
     },
@@ -561,72 +561,72 @@
     },
     {
         "author": "",
-        "publisher": "",
-        "isbn": "",
-        "language": "",
+        "publisher": "Companhia das Letras",
+        "isbn": "9786559213023",
+        "language": "Português",
         "domain": "travessa"
     },
     {
         "author": "",
-        "publisher": "",
-        "isbn": "",
-        "language": "",
+        "publisher": "Fósforo",
+        "isbn": "9786589733225",
+        "language": "Português",
         "domain": "travessa"
     },
     {
         "author": "",
-        "publisher": "",
-        "isbn": "",
-        "language": "",
+        "publisher": "Melhoramentos",
+        "isbn": "9788506086926",
+        "language": "Português",
         "domain": "travessa"
     },
     {
         "author": "",
-        "publisher": "",
-        "isbn": "",
-        "language": "",
+        "publisher": "Seguinte",
+        "isbn": "9788555340949",
+        "language": "Português",
         "domain": "travessa"
     },
     {
         "author": "",
-        "publisher": "",
-        "isbn": "",
-        "language": "",
+        "publisher": "Seguinte",
+        "isbn": "9788565765480",
+        "language": "Português",
         "domain": "travessa"
     },
     {
         "author": "",
-        "publisher": "",
-        "isbn": "",
-        "language": "",
+        "publisher": "Taschen BR",
+        "isbn": "9783836585101",
+        "language": "Inglês",
         "domain": "travessa"
     },
     {
         "author": "",
-        "publisher": "",
-        "isbn": "",
-        "language": "",
+        "publisher": "Todavia",
+        "isbn": "9786580309313",
+        "language": "Português",
         "domain": "travessa"
     },
     {
         "author": "",
-        "publisher": "",
-        "isbn": "",
-        "language": "",
+        "publisher": "Carlton Books",
+        "isbn": "9781783121830",
+        "language": "Inglês",
         "domain": "travessa"
     },
     {
         "author": "",
-        "publisher": "",
-        "isbn": "",
-        "language": "",
+        "publisher": "Todavia",
+        "isbn": "9786556921976",
+        "language": "Português",
         "domain": "travessa"
     },
     {
         "author": "",
-        "publisher": "",
-        "isbn": "",
-        "language": "",
+        "publisher": "Planeta do Brasil",
+        "isbn": "9786555354522",
+        "language": "Português",
         "domain": "travessa"
     },
     {

@@ -244,7 +244,7 @@ def singleWrapper(page) -> Book:
 
     soup = BeautifulSoup(page, 'html.parser')
     authorInfo = ['autor', 'autor:']
-    isbnInfo = ['isbn', 'ean13', 'isbn-13', 'isbn:']
+    isbnInfo = ['isbn', 'ean13', 'isbn-13', 'isbn:', 'código do produto']
     publisherInfo = ['editora', 'marca', 'editora do livro', 'editora:']
     languageInfo = ['idioma', 'idioma:']
 
@@ -253,7 +253,15 @@ def singleWrapper(page) -> Book:
     isbn = ""
     language = ""
 
-    allTags = soup.find_all(["th", "td"])
+    allTags = soup.find_all('a', href=True)
+    for index, res in enumerate(allTags):
+        link = res['href']
+        if '/autor/' in link:
+            author = res.text
+        if '/editora/' in link:
+            publisher = res.text
+
+    allTags = soup.find_all(["th", "td", "span", "a"])
     for index, res in enumerate(allTags):
         text: str = res.text.lower().strip()
         if (text in authorInfo):
@@ -261,7 +269,9 @@ def singleWrapper(page) -> Book:
         elif (text in publisherInfo):
             publisher = allTags[index+1].text
         elif (text in isbnInfo):
-            isbn = allTags[index+1].text
+            isbn = allTags[index+1].text.strip()
+            if len(isbn) > 13:
+                isbn = isbn.split(' ')[-1]
         elif (text in languageInfo):
             language = allTags[index+1].text
 
