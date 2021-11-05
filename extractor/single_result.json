@@ -1,0 +1,702 @@
+[
+    {
+        "author": "T. Harv Eker",
+        "publisher": "Editora Sextante",
+        "isbn": "9788575422397",
+        "language": "Português",
+        "domain": "americanas"
+    },
+    {
+        "author": "Kiera Cass",
+        "publisher": "Seguinte",
+        "isbn": "9788565765015",
+        "language": "Português",
+        "domain": "americanas"
+    },
+    {
+        "author": "Disney Institute",
+        "publisher": "Benvirá",
+        "isbn": "9788502124042",
+        "language": "Português",
+        "domain": "americanas"
+    },
+    {
+        "author": "Victoria Aveyard",
+        "publisher": "Seguinte",
+        "isbn": "9788565765695",
+        "language": "Português",
+        "domain": "americanas"
+    },
+    {
+        "author": "Robert T. Kiyosaki",
+        "publisher": "Alta Books",
+        "isbn": "9788550801483",
+        "language": "Português, Inglês",
+        "domain": "americanas"
+    },
+    {
+        "author": "Alwyn Hamilton",
+        "publisher": "Seguinte",
+        "isbn": "9788555340291",
+        "language": "Português",
+        "domain": "americanas"
+    },
+    {
+        "author": "Cristiane Correa",
+        "publisher": "Primeira Pessoa",
+        "isbn": "9788575429105",
+        "language": "Português",
+        "domain": "americanas"
+    },
+    {
+        "author": "C. J. Tudor",
+        "publisher": "Intrínseca",
+        "isbn": "9788551002933",
+        "language": "Português",
+        "domain": "americanas"
+    },
+    {
+        "author": "Thiago Nigro",
+        "publisher": "HarperCollins",
+        "isbn": "9788595083271",
+        "language": "Português",
+        "domain": "americanas"
+    },
+    {
+        "author": "Karen M. McManus",
+        "publisher": "Galera",
+        "isbn": "9788501112521",
+        "language": "Português",
+        "domain": "americanas"
+    },
+    {
+        "author": "",
+        "publisher": "ROCCO -",
+        "isbn": "8532530435",
+        "language": "PORTUGUÊS",
+        "domain": "cultura"
+    },
+    {
+        "author": "",
+        "publisher": "ARQUEIRO",
+        "isbn": "8580413079",
+        "language": "PORTUGUÊS",
+        "domain": "cultura"
+    },
+    {
+        "author": "",
+        "publisher": "BEST SELLER",
+        "isbn": "8576849941",
+        "language": "PORTUGUÊS",
+        "domain": "cultura"
+    },
+    {
+        "author": "",
+        "publisher": "COMPANHIA DAS LETRAS",
+        "isbn": "8535933964",
+        "language": "PORTUGUÊS",
+        "domain": "cultura"
+    },
+    {
+        "author": "",
+        "publisher": "GLOBO LIVROS",
+        "isbn": "6555670398",
+        "language": "PORTUGUÊS",
+        "domain": "cultura"
+    },
+    {
+        "author": "",
+        "publisher": "VESTIGIO",
+        "isbn": "6599039812",
+        "language": "PORTUGUÊS",
+        "domain": "cultura"
+    },
+    {
+        "author": "",
+        "publisher": "SEXTANTE",
+        "isbn": "8543102146",
+        "language": "PORTUGUÊS",
+        "domain": "cultura"
+    },
+    {
+        "author": "",
+        "publisher": "OBJETIVA",
+        "isbn": "8547000240",
+        "language": "PORTUGUÊS",
+        "domain": "cultura"
+    },
+    {
+        "author": "",
+        "publisher": "ROCCO -",
+        "isbn": "853252978X",
+        "language": "PORTUGUÊS",
+        "domain": "cultura"
+    },
+    {
+        "author": "",
+        "publisher": "CDG EDITORA",
+        "isbn": "8568014003",
+        "language": "PORTUGUÊS",
+        "domain": "cultura"
+    },
+    {
+        "author": "COLLEEN HOOVER",
+        "publisher": "RECORD",
+        "isbn": "8501301647",
+        "language": "PORTUGUES",
+        "domain": "curitiba"
+    },
+    {
+        "author": "ECKHART TOLLE",
+        "publisher": "GMT",
+        "isbn": "8575423134",
+        "language": "PORTUGUES",
+        "domain": "curitiba"
+    },
+    {
+        "author": "CARPINEJAR",
+        "publisher": "BERTRAND LV",
+        "isbn": "6558380560",
+        "language": "PORTUGUES",
+        "domain": "curitiba"
+    },
+    {
+        "author": "CLARISSA PINKOLA ESTES",
+        "publisher": "ROCCO LV",
+        "isbn": "853252978X",
+        "language": "PORTUGUES",
+        "domain": "curitiba"
+    },
+    {
+        "author": "RANSOM RIGGS",
+        "publisher": "INTRINSECA",
+        "isbn": "6555603054",
+        "language": "PORTUGUES",
+        "domain": "curitiba"
+    },
+    {
+        "author": "ELAINNE OURIVES",
+        "publisher": "GENTE LV",
+        "isbn": "8545203861",
+        "language": "PORTUGUES",
+        "domain": "curitiba"
+    },
+    {
+        "author": "CONSTANCE SAYERS",
+        "publisher": "NOVA FRONTEIRA",
+        "isbn": "6589132216",
+        "language": "PORTUGUES",
+        "domain": "curitiba"
+    },
+    {
+        "author": "GABRIEL DEARO",
+        "publisher": "OUTRO PLANETA",
+        "isbn": "6555355212",
+        "language": "PORTUGUES",
+        "domain": "curitiba"
+    },
+    {
+        "author": "ALEXANDRE COIMBRA",
+        "publisher": "PAIDOS",
+        "isbn": "655535478X",
+        "language": "PORTUGUES",
+        "domain": "curitiba"
+    },
+    {
+        "author": "GEORGE S CLASON",
+        "publisher": "CASA DOS LIVROS",
+        "isbn": "8595081530",
+        "language": "PORTUGUES",
+        "domain": "curitiba"
+    },
+    {
+        "author": "",
+        "publisher": "rocco",
+        "isbn": "9786555320343",
+        "language": "Português",
+        "domain": "magazine"
+    },
+    {
+        "author": "Orwell, George, Lima, Karla",
+        "publisher": "Ciranda Cultural",
+        "isbn": "",
+        "language": "Português, Inglês",
+        "domain": "magazine"
+    },
+    {
+        "author": "",
+        "publisher": "seguinte",
+        "isbn": "9788555341489",
+        "language": "Português",
+        "domain": "magazine"
+    },
+    {
+        "author": "Vieira, Paulo",
+        "publisher": "Gente",
+        "isbn": "",
+        "language": "Português",
+        "domain": "magazine"
+    },
+    {
+        "author": "Maud Montgomery, Lucy, Bonaldi, Rafael, Welcman, Max, Sette Camara, João, Mayumi, Beatriz",
+        "publisher": "Ciranda Cultural",
+        "isbn": "",
+        "language": "Português",
+        "domain": "magazine"
+    },
+    {
+        "author": "Hill, Napoleon",
+        "publisher": "Citadel Editora",
+        "isbn": "",
+        "language": "Português, Inglês",
+        "domain": "magazine"
+    },
+    {
+        "author": "Vieira, Paulo, de Sousa, Maurício",
+        "publisher": "Gente",
+        "isbn": "9788545202660",
+        "language": "Português, Português",
+        "domain": "magazine"
+    },
+    {
+        "author": "Zusak, Markus, Ribeiro, Vera",
+        "publisher": "Intrínseca",
+        "isbn": "",
+        "language": "Português",
+        "domain": "magazine"
+    },
+    {
+        "author": "",
+        "publisher": "buzz",
+        "isbn": "9786589623045",
+        "language": "Português",
+        "domain": "magazine"
+    },
+    {
+        "author": "Simone de Beauvoir",
+        "publisher": "Nova Fronteira",
+        "isbn": "9788520946213",
+        "language": "Português",
+        "domain": "magazine"
+    },
+    {
+        "author": "Autor: T. Harv Eker",
+        "publisher": "SEXTANTE",
+        "isbn": "",
+        "language": "Português",
+        "domain": "mercadoLivre"
+    },
+    {
+        "author": "Vários Autores",
+        "publisher": "GRUPO SARAIVA EDUCAÇÃO",
+        "isbn": "",
+        "language": "Português",
+        "domain": "mercadoLivre"
+    },
+    {
+        "author": "Lima, Branca Alves De",
+        "publisher": "Edipro",
+        "isbn": "",
+        "language": "Português",
+        "domain": "mercadoLivre"
+    },
+    {
+        "author": "Publicações Pão Diário",
+        "publisher": "Pão Diário",
+        "isbn": "",
+        "language": "Português",
+        "domain": "mercadoLivre"
+    },
+    {
+        "author": "Autor: Brené Brown",
+        "publisher": "SEXTANTE",
+        "isbn": "",
+        "language": "Português",
+        "domain": "mercadoLivre"
+    },
+    {
+        "author": "Napoleon Hill",
+        "publisher": "Fundamento",
+        "isbn": "",
+        "language": "Português",
+        "domain": "mercadoLivre"
+    },
+    {
+        "author": "Mark Douglas",
+        "publisher": "Bookout",
+        "isbn": "",
+        "language": "Português",
+        "domain": "mercadoLivre"
+    },
+    {
+        "author": "Robert Kiyosaki",
+        "publisher": "Alta Books",
+        "isbn": "",
+        "language": "Português",
+        "domain": "mercadoLivre"
+    },
+    {
+        "author": "Autor: Eckhart Tolle",
+        "publisher": "SEXTANTE",
+        "isbn": "",
+        "language": "Português",
+        "domain": "mercadoLivre"
+    },
+    {
+        "author": "Adaptação da obra de: Mark Manson",
+        "publisher": "INTRINSECA",
+        "isbn": "",
+        "language": "Português",
+        "domain": "mercadoLivre"
+    },
+    {
+        "author": "Hill,Napoleon",
+        "publisher": "Citadel",
+        "isbn": "9788568014004",
+        "language": "Português",
+        "domain": "saraiva"
+    },
+    {
+        "author": "Morris,Heather",
+        "publisher": "Planeta do Brasil",
+        "isbn": "9788542215694",
+        "language": "Português",
+        "domain": "saraiva"
+    },
+    {
+        "author": "Kiyosaki,Robert T.",
+        "publisher": "Alta Books",
+        "isbn": "9788550801483",
+        "language": "Português",
+        "domain": "saraiva"
+    },
+    {
+        "author": "Duhigg,Charles",
+        "publisher": "Objetiva",
+        "isbn": "9788539004119",
+        "language": "Português",
+        "domain": "saraiva"
+    },
+    {
+        "author": "Pasek,Benj,Levenson,Steven,Emmich,Val",
+        "publisher": "Seguinte",
+        "isbn": "9788555340833",
+        "language": "Português",
+        "domain": "saraiva"
+    },
+    {
+        "author": "Donlea,Charlie",
+        "publisher": "Faro Editorial",
+        "isbn": "9788562409882",
+        "language": "Português",
+        "domain": "saraiva"
+    },
+    {
+        "author": "Tolle,Eckhart",
+        "publisher": "Sextante / Gmt",
+        "isbn": "8575420275",
+        "language": "Português",
+        "domain": "saraiva"
+    },
+    {
+        "author": "Kahneman,Daniel",
+        "publisher": "Objetiva",
+        "isbn": "9788539003839",
+        "language": "Português",
+        "domain": "saraiva"
+    },
+    {
+        "author": "Doyle,Arthur Conan",
+        "publisher": "Aeroplano Editora",
+        "isbn": "9788565042772",
+        "language": "Português",
+        "domain": "saraiva"
+    },
+    {
+        "author": "O'leary,Beth",
+        "publisher": "Intrinseca",
+        "isbn": "9788551005415",
+        "language": "Português",
+        "domain": "saraiva"
+    },
+    {
+        "author": "Lauren Layne",
+        "publisher": "Paralela",
+        "isbn": "9788584391073",
+        "language": "Português",
+        "domain": "shoptime"
+    },
+    {
+        "author": "E. Lockhart",
+        "publisher": "Seguinte",
+        "isbn": "9788565765480",
+        "language": "Português",
+        "domain": "shoptime"
+    },
+    {
+        "author": "Victoria Aveyard",
+        "publisher": "Seguinte",
+        "isbn": "9788555340871",
+        "language": "Português",
+        "domain": "shoptime"
+    },
+    {
+        "author": "Victoria Aveyard",
+        "publisher": "Seguinte",
+        "isbn": "9788555340277",
+        "language": "Português",
+        "domain": "shoptime"
+    },
+    {
+        "author": "Victoria Aveyard",
+        "publisher": "Seguinte",
+        "isbn": "9788565765695",
+        "language": "Português",
+        "domain": "shoptime"
+    },
+    {
+        "author": "Taylor Jenkins Reid",
+        "publisher": "Paralela",
+        "isbn": "9788584391509",
+        "language": "Português",
+        "domain": "shoptime"
+    },
+    {
+        "author": "J.R.R. Tolkien",
+        "publisher": "HarperCollins",
+        "isbn": "9788595084742",
+        "language": "Português",
+        "domain": "shoptime"
+    },
+    {
+        "author": "Beth O�Leary",
+        "publisher": "Intrínseca",
+        "isbn": "9788551005415",
+        "language": "Português, Inglês",
+        "domain": "shoptime"
+    },
+    {
+        "author": "Victoria Aveyard",
+        "publisher": "Seguinte",
+        "isbn": "9788555340550",
+        "language": "Português",
+        "domain": "shoptime"
+    },
+    {
+        "author": "Frank Herbert",
+        "publisher": "Editora Aleph",
+        "isbn": "9788576573135",
+        "language": "Português",
+        "domain": "shoptime"
+    },
+    {
+        "author": "Homero",
+        "publisher": "Penguin",
+        "isbn": "9788563560940",
+        "language": "Português",
+        "domain": "submarino"
+    },
+    {
+        "author": "Taylor Jenkins Reid",
+        "publisher": "Paralela",
+        "isbn": "9788584391509",
+        "language": "Português",
+        "domain": "submarino"
+    },
+    {
+        "author": "Victor Hugo",
+        "publisher": "Martin Claret",
+        "isbn": "9788544000007",
+        "language": "Português",
+        "domain": "submarino"
+    },
+    {
+        "author": "Fiódor Dostoiévski",
+        "publisher": "Martin Claret",
+        "isbn": "9786586014679",
+        "language": "Português, Russo",
+        "domain": "submarino"
+    },
+    {
+        "author": "Miguel de Cervantes",
+        "publisher": "Nova Fronteira",
+        "isbn": "9788520923092",
+        "language": "Português",
+        "domain": "submarino"
+    },
+    {
+        "author": "Liev Tolstói",
+        "publisher": "Companhia das Letras",
+        "isbn": "9788535930047",
+        "language": "Português",
+        "domain": "submarino"
+    },
+    {
+        "author": "Bram Stoker",
+        "publisher": "Darkside",
+        "isbn": "9788566636239",
+        "language": "Português",
+        "domain": "submarino"
+    },
+    {
+        "author": "Jane Austen",
+        "publisher": "Martin Claret",
+        "isbn": "9788544001820",
+        "language": "Português",
+        "domain": "submarino"
+    },
+    {
+        "author": "José Saramago",
+        "publisher": "Companhia das Letras",
+        "isbn": "9788535930313",
+        "language": "Português",
+        "domain": "submarino"
+    },
+    {
+        "author": "Casey McQuiston",
+        "publisher": "Seguinte",
+        "isbn": "9788555340949",
+        "language": "Português",
+        "domain": "submarino"
+    },
+    {
+        "author": "",
+        "publisher": "",
+        "isbn": "",
+        "language": "",
+        "domain": "travessa"
+    },
+    {
+        "author": "",
+        "publisher": "",
+        "isbn": "",
+        "language": "",
+        "domain": "travessa"
+    },
+    {
+        "author": "",
+        "publisher": "",
+        "isbn": "",
+        "language": "",
+        "domain": "travessa"
+    },
+    {
+        "author": "",
+        "publisher": "",
+        "isbn": "",
+        "language": "",
+        "domain": "travessa"
+    },
+    {
+        "author": "",
+        "publisher": "",
+        "isbn": "",
+        "language": "",
+        "domain": "travessa"
+    },
+    {
+        "author": "",
+        "publisher": "",
+        "isbn": "",
+        "language": "",
+        "domain": "travessa"
+    },
+    {
+        "author": "",
+        "publisher": "",
+        "isbn": "",
+        "language": "",
+        "domain": "travessa"
+    },
+    {
+        "author": "",
+        "publisher": "",
+        "isbn": "",
+        "language": "",
+        "domain": "travessa"
+    },
+    {
+        "author": "",
+        "publisher": "",
+        "isbn": "",
+        "language": "",
+        "domain": "travessa"
+    },
+    {
+        "author": "",
+        "publisher": "",
+        "isbn": "",
+        "language": "",
+        "domain": "travessa"
+    },
+    {
+        "author": "Itamar Vieira Junior",
+        "publisher": "Todavia",
+        "isbn": "9786580309313",
+        "language": "Português",
+        "domain": "vila"
+    },
+    {
+        "author": "Holly Black",
+        "publisher": "Galera Record",
+        "isbn": "9788501304469",
+        "language": "Português",
+        "domain": "vila"
+    },
+    {
+        "author": "Alex Michaelides",
+        "publisher": "Record",
+        "isbn": "9788501116437",
+        "language": "Português",
+        "domain": "vila"
+    },
+    {
+        "author": "Ciranda Cultural",
+        "publisher": "Ciranda Cultural",
+        "isbn": "9788538055839",
+        "language": "Português",
+        "domain": "vila"
+    },
+    {
+        "author": "Deepak Chopra",
+        "publisher": "Rocco",
+        "isbn": "9786555321524",
+        "language": "Português",
+        "domain": "vila"
+    },
+    {
+        "author": "Ken Follett",
+        "publisher": "Arqueiro",
+        "isbn": "9786555652062",
+        "language": "Português",
+        "domain": "vila"
+    },
+    {
+        "author": "Kate Morton",
+        "publisher": "Arqueiro",
+        "isbn": "9786555652147",
+        "language": "Português",
+        "domain": "vila"
+    },
+    {
+        "author": "Christopher Clarey",
+        "publisher": "Intrínseca",
+        "isbn": "9786555602920",
+        "language": "Português",
+        "domain": "vila"
+    },
+    {
+        "author": "Sally Rooney",
+        "publisher": "Companhia das Letras",
+        "isbn": "9786559213320",
+        "language": "Português",
+        "domain": "vila"
+    },
+    {
+        "author": "Laurentino Gomes",
+        "publisher": "Globo",
+        "isbn": "9786555670394",
+        "language": "Português",
+        "domain": "vila"
+    }
+]

@@ -1,5 +1,6 @@
 import os
 import re
+import json
 
 
 class Utils:
@@ -25,3 +26,18 @@ class Utils:
         newPath = os.path.join(os.path.dirname(__file__), path)
         filenames = next(os.walk(newPath), (None, None, []))[2]
         return filenames
+
+    @staticmethod
+    def readJsonFile(path):
+        jsonPath = os.path.join(os.path.dirname(
+            __file__), path)
+        with open(jsonPath, encoding='utf-8') as f:
+            jsonData = json.load(f)
+        return jsonData
+
+    @staticmethod
+    def writeJsonFile(path, obj):
+        jsonPath = os.path.join(os.path.dirname(
+            __file__), path)
+        with open(jsonPath, "w", encoding='utf-8') as f:
+            json.dump(obj, f, ensure_ascii=False)
