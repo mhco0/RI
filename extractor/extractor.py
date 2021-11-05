@@ -1,12 +1,13 @@
+from typing import Match
 from book import Book
 from utils import Utils
+from bs4 import BeautifulSoup
 
 BOOKS_PATH = '../books/'
 REGEX_GROUP = '(.+?)'
 
 
 def createBook(page, preffix: dict, suffix) -> Book:
-    # title = Utils.regexSearch(preffix['title']+REGEX_GROUP+suffix['title'], page)
     author = Utils.regexSearch(
         preffix['author']+REGEX_GROUP+suffix['author'], page)
     publisher = Utils.regexSearch(
@@ -15,29 +16,24 @@ def createBook(page, preffix: dict, suffix) -> Book:
         preffix['isbn']+REGEX_GROUP+suffix['isbn'], page)
     language = Utils.regexSearch(
         preffix['language']+REGEX_GROUP+suffix['language'], page)
-    # date = Utils.regexSearch(preffix['date']+REGEX_GROUP+suffix['date'], page)
 
     return Book(author, publisher, isbn, language)
 
 
 def americanasWrapper(page) -> Book:
     preffix = {
-        # 'title': 'Título</td><td class="src__Text-sc-70o4ee-7 iHQLKS">',
         'author': 'Autor</td><td class="src__Text-sc-70o4ee-7 iHQLKS">',
         'publisher': 'Editora</td><td class="src__Text-sc-70o4ee-7 iHQLKS">',
         'isbn': 'ISBN-13</td><td class="src__Text-sc-70o4ee-7 iHQLKS">',
         'language': 'Idioma</td><td class="src__Text-sc-70o4ee-7 iHQLKS">',
-        # 'date': 'Data de publicação</td><td class="src__Text-sc-70o4ee-7 iHQLKS">'
     }
 
     suf = '</td></tr>'
     suffix = {
-        # 'title': suf,
         'author': suf,
         'publisher': suf,
         'isbn': suf,
         'language': suf,
-        # 'date': suf
     }
 
     book = createBook(page, preffix, suffix)
@@ -46,22 +42,18 @@ def americanasWrapper(page) -> Book:
 
 def shoptimeWrapper(page) -> Book:
     preffix = {
-        # 'title': 'Título</td><td class="src__Text-sc-1m6tc2l-4 kBDbsy">',
         'author': 'Autor</td><td class="src__Text-sc-1m6tc2l-4 kBDbsy">',
         'publisher': 'Editora</td><td class="src__Text-sc-1m6tc2l-4 kBDbsy">',
         'isbn': 'ISBN-13</td><td class="src__Text-sc-1m6tc2l-4 kBDbsy">',
         'language': 'Idioma</td><td class="src__Text-sc-1m6tc2l-4 kBDbsy">',
-        # 'date': 'Data de publicação</td><td class="src__Text-sc-1m6tc2l-4 kBDbsy">'
     }
 
     suf = '</td></tr>'
     suffix = {
-        # 'title': suf,
         'author': suf,
         'publisher': suf,
         'isbn': suf,
         'language': suf,
-        # 'date': suf
     }
 
     book = createBook(page, preffix, suffix)
@@ -70,22 +62,18 @@ def shoptimeWrapper(page) -> Book:
 
 def submarinoWrapper(page) -> Book:
     preffix = {
-        # 'title': 'Título</td><td class="src__Text-sc-10qje1m-4 fyapQy">',
         'author': 'Autor</td><td class="src__Text-sc-10qje1m-4 fyapQy">',
         'publisher': 'Editora</td><td class="src__Text-sc-10qje1m-4 fyapQy">',
         'isbn': 'ISBN-13</td><td class="src__Text-sc-10qje1m-4 fyapQy">',
         'language': 'Idioma</td><td class="src__Text-sc-10qje1m-4 fyapQy">',
-        # 'date': 'Data de publicação</td><td class="src__Text-sc-10qje1m-4 fyapQy">'
     }
 
     suf = '</td></tr>'
     suffix = {
-        # 'title': suf,
         'author': suf,
         'publisher': suf,
         'isbn': suf,
         'language': suf,
-        # 'date': suf
     }
 
     book = createBook(page, preffix, suffix)
@@ -96,7 +84,7 @@ def curitibaWrapper(page) -> Book:
     preffix = {
         'author': 'Autor</th><td class="value-field Autor">',
         'publisher': 'Editora</th><td class="value-field Editora">',
-        'isbn': 'EAN13</th><td class="value-field EAN13">',
+        'isbn': 'ISBN</th><td class="value-field ISBN">',
         'language': 'Idioma</th><td class="value-field Idioma">'
     }
 
@@ -150,6 +138,10 @@ def magazineWrapper(page) -> Book:
 
     book = createBook(page, preffix, suffix)
 
+    if book.author == '':
+        publisherAuthor = 'Autor </td> <td class="description__information-box-right">(.+?)(\n|</td> </tr>)'
+        book.author = Utils.regexSearch(publisherAuthor, page)
+
     if book.publisher == '':
         publisherAlternative = 'Editora </td> <td class="description__information-box-right">(.+?)</td> </tr>'
         book.publisher = Utils.regexSearch(publisherAlternative, page)
@@ -157,6 +149,9 @@ def magazineWrapper(page) -> Book:
     if book.isbn == '':
         isbnAlternative = 'ISBN-13 -(.+?)</td> </tr>'
         book.isbn = Utils.regexSearch(isbnAlternative, page)
+        if book.isbn == '':
+            isbnAlternative = 'GTIN-13 -(.+?)</td> </tr>'
+            book.isbn = Utils.regexSearch(isbnAlternative, page)
 
     if book.language == '':
         languageAlternative = 'Idioma </td> <td class="description__information-box-right">(.+?)</td> </tr>'
@@ -168,7 +163,7 @@ def magazineWrapper(page) -> Book:
 def mercadoLivreWrapper(page) -> Book:
     preffix = {
         'author': 'Autor</th><td class="andes-table__column andes-table__column--left ui-pdp-specs__table__column"><span class="andes-table__column--value">',
-        'publisher': 'Editora</th><td class="andes-table__column andes-table__column--left ui-pdp-specs__table__column"><span class="andes-table__column--value">',
+        'publisher': 'Editora do livro</th><td class="andes-table__column andes-table__column--left ui-pdp-specs__table__column"><span class="andes-table__column--value">',
         'isbn': 'ISBN</span>:',
         'language': 'Idioma</th><td class="andes-table__column andes-table__column--left ui-pdp-specs__table__column"><span class="andes-table__column--value">'
     }
@@ -245,7 +240,35 @@ def culturaWrapper(page) -> Book:
     return book
 
 
-def getAllBooks():
+def singleWrapper(page) -> Book:
+
+    soup = BeautifulSoup(page, 'html.parser')
+    authorInfo = ['autor', 'autor:']
+    isbnInfo = ['isbn', 'ean13', 'isbn-13', 'isbn:']
+    publisherInfo = ['editora', 'marca', 'editora do livro', 'editora:']
+    languageInfo = ['idioma', 'idioma:']
+
+    author = ""
+    publisher = ""
+    isbn = ""
+    language = ""
+
+    allTags = soup.find_all(["th", "td"])
+    for index, res in enumerate(allTags):
+        text: str = res.text.lower().strip()
+        if (text in authorInfo):
+            author = allTags[index+1].text
+        elif (text in publisherInfo):
+            publisher = allTags[index+1].text
+        elif (text in isbnInfo):
+            isbn = allTags[index+1].text
+        elif (text in languageInfo):
+            language = allTags[index+1].text
+
+    return Book(author, publisher, isbn, language)
+
+
+def getAllBooks(option):
     print("getting books...")
     directories = ['americanas', 'cultura', 'curitiba', 'magazine',
                    'mercadoLivre', 'saraiva', 'shoptime', 'submarino', 'travessa', 'vila']
@@ -263,15 +286,17 @@ def getAllBooks():
     }
     books = []
     for directory in directories:
-        filenames = Utils.getFilenames(BOOKS_PATH + directory)
+        filenames = Utils.getFilenames(BOOKS_PATH + directory + '/pos')
         for filename in filenames:
-            page = Utils.readFile(BOOKS_PATH + directory + f'/{filename}')
-            data = wrappers[directory](page)
+            page = Utils.readFile(
+                BOOKS_PATH + directory + '/pos' + f'/{filename}')
+            data = wrappers[directory](page) if (
+                option == 1) else singleWrapper(page)
             book = {
-                'author': data.author,
-                'publisher': data.publisher,
-                'isbn': data.isbn,
-                'language': data.language,
+                'author': data.author.strip(),
+                'publisher': data.publisher.strip(),
+                'isbn': data.isbn.strip(),
+                'language': data.language.strip(),
                 'domain': directory
 
             }
@@ -279,6 +304,30 @@ def getAllBooks():
     return books
 
 
-books = getAllBooks()
-print(len(books))
-Utils.writeJsonFile('./books.json', books)
+def writeBooks(books):
+    Utils.writeJsonFile('./result.json', books)
+
+
+def menu():
+    userInput = ''
+    while(userInput != '3'):
+        print("Choose an option:")
+        print("1 - Individual wrappers")
+        print("2 - Single wrapper")
+        print("3 - exit")
+        userInput = input("option:")
+        if userInput == '1':
+            books = getAllBooks(1)
+            Utils.writeJsonFile('./result.json', books)
+            break
+        elif userInput == '2':
+            books = getAllBooks(2)
+            Utils.writeJsonFile('./single_result.json', books)
+            break
+        elif userInput == '3':
+            break
+        else:
+            print("Invalid option, try again!")
+
+
+menu()
