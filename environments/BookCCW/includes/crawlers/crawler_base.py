@@ -95,7 +95,8 @@ class RobotsParser:
                                 
     def can_fetch(self, user_agent, path):
         for (agent, permition) in self.permitions.items():
-            if agent == user_agent:
+            user_pattern = re.compile(agent.replace("*", ".*"))
+            if user_pattern.match(user_agent):
                 for url in permition["Disallowed"]:
                     pattern = re.compile(url.replace("*", ".*"))
                     if pattern.match(path):

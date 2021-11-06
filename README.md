@@ -22,7 +22,7 @@ $ python bookccw <crawler_name>
 ### Crawlers Disponíveis
 - [x] BaseCrawler
 - [x] BFSCrawler
-- [ ] HeuristicCrawler
+- [x] HeuristicCrawler
 
 Os crawlers marcados são os que foram testados e estão funcionando na branch `crawler`.
 

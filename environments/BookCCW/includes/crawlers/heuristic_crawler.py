@@ -25,7 +25,7 @@ class HeuristicCrawler(BaseCrawler):
             session = requests.Session()
 
             while(len(self.url_heap) != 0):
-                (_, front_url) = self.url_heap.heappop()
+                (_, front_url) = heapq.heappop(self.url_heap)
                 if not front_url.startswith("http"):
                     continue
 
@@ -39,14 +39,21 @@ class HeuristicCrawler(BaseCrawler):
                 if(page.status_code == 200 and self.is_html(page)):
                     soup = BeautifulSoup(page.content, 'html.parser')
 
-                    for link in soup.find_all('a'):                                    
+                    for link in soup.find_all('a'):                   
                         new_url = link.get('href')
                         if new_url != None:
                             if self.robots[i].can_fetch(headers["User-Agent"], new_url) and new_url not in self.viewed_links:
                                 self.viewed_links[new_url] = True
                                 if new_url.startswith("/"):
                                     new_url = self.domains[i] + new_url
-                                heapq.heappush(self.url_heap, (-self.rank_func(new_url), new_url))
+
+                                
+                                rank = self.rank_func(new_url)
+                                anchor = link.text
+                                if anchor != None:
+                                    rank += self.rank_func(anchor)
+
+                                heapq.heappush(self.url_heap, (-rank, new_url))
 
                     if not self.save_page(self.path_database + "/" + self.name + "/" + domain_main_name, front_url, page.text):
                         break

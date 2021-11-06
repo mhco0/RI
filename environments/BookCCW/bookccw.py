@@ -26,7 +26,7 @@ if __name__ == "__main__":
             test_crawler = BFSCrawler(DOMAIN_FILE_PATH, DATABASE_PATH, PAGES_TO_DOWNLOAD)
         elif crawler_type == "HeuristicCrawler":
             test_crawler = HeuristicCrawler(DOMAIN_FILE_PATH, DATABASE_PATH, PAGES_TO_DOWNLOAD)
-            test_crawler.set_heuristic_function(Utils.rank_books)
+            test_crawler.set_heuristic_function(utils.rank_books)
         else:
             test_crawler = BaseCrawler(DOMAIN_FILE_PATH, DATABASE_PATH, PAGES_TO_DOWNLOAD)
 
