@@ -5,19 +5,31 @@ from bs4 import BeautifulSoup
 
 BOOKS_PATH = '../books/'
 REGEX_GROUP = '(.+?)'
+DOMAINS = ['americanas', 'cultura', 'curitiba', 'magazine',
+           'mercadoLivre', 'saraiva', 'shoptime', 'submarino', 'travessa', 'vila']
 
 
-def createBook(page, preffix: dict, suffix) -> Book:
+def bookToDict(book: Book):
+    return {
+        'author': book.author,
+        'publisher': book.publisher,
+        'isbn': book.isbn,
+        'language': book.language,
+        'domain': book.domain
+    }
+
+
+def createBook(page, domain, preffix: dict, suffix) -> Book:
     author = Utils.regexSearch(
-        preffix['author']+REGEX_GROUP+suffix['author'], page)
+        preffix['author']+REGEX_GROUP+suffix['author'], page).strip()
     publisher = Utils.regexSearch(
-        preffix['publisher']+REGEX_GROUP+suffix['publisher'], page)
+        preffix['publisher']+REGEX_GROUP+suffix['publisher'], page).strip()
     isbn = Utils.regexSearch(
-        preffix['isbn']+REGEX_GROUP+suffix['isbn'], page)
+        preffix['isbn']+REGEX_GROUP+suffix['isbn'], page).strip()
     language = Utils.regexSearch(
-        preffix['language']+REGEX_GROUP+suffix['language'], page)
+        preffix['language']+REGEX_GROUP+suffix['language'], page).strip()
 
-    return Book(author, publisher, isbn, language)
+    return Book(author, publisher, isbn, language, domain)
 
 
 def americanasWrapper(page) -> Book:
@@ -36,7 +48,7 @@ def americanasWrapper(page) -> Book:
         'language': suf,
     }
 
-    book = createBook(page, preffix, suffix)
+    book = createBook(page, 'americanas', preffix, suffix)
     return book
 
 
@@ -56,7 +68,7 @@ def shoptimeWrapper(page) -> Book:
         'language': suf,
     }
 
-    book = createBook(page, preffix, suffix)
+    book = createBook(page, 'shoptime', preffix, suffix)
     return book
 
 
@@ -76,7 +88,7 @@ def submarinoWrapper(page) -> Book:
         'language': suf,
     }
 
-    book = createBook(page, preffix, suffix)
+    book = createBook(page, 'submarino', preffix, suffix)
     return book
 
 
@@ -96,7 +108,7 @@ def curitibaWrapper(page) -> Book:
         'language': suf
     }
 
-    book = createBook(page, preffix, suffix)
+    book = createBook(page, 'curitiba', preffix, suffix)
     return book
 
 
@@ -116,7 +128,7 @@ def vilaWrapper(page) -> Book:
         'language': suf
     }
 
-    book = createBook(page, preffix, suffix)
+    book = createBook(page, 'vila', preffix, suffix)
     return book
 
 
@@ -136,26 +148,26 @@ def magazineWrapper(page) -> Book:
         'language': suf
     }
 
-    book = createBook(page, preffix, suffix)
+    book = createBook(page, 'magazine', preffix, suffix)
 
     if book.author == '':
         publisherAuthor = 'Autor </td> <td class="description__information-box-right">(.+?)(\n|</td> </tr>)'
-        book.author = Utils.regexSearch(publisherAuthor, page)
+        book.author = Utils.regexSearch(publisherAuthor, page).strip()
 
     if book.publisher == '':
         publisherAlternative = 'Editora </td> <td class="description__information-box-right">(.+?)</td> </tr>'
-        book.publisher = Utils.regexSearch(publisherAlternative, page)
+        book.publisher = Utils.regexSearch(publisherAlternative, page).strip()
 
     if book.isbn == '':
         isbnAlternative = 'ISBN-13 -(.+?)</td> </tr>'
-        book.isbn = Utils.regexSearch(isbnAlternative, page)
+        book.isbn = Utils.regexSearch(isbnAlternative, page).strip()
         if book.isbn == '':
             isbnAlternative = 'GTIN-13 -(.+?)</td> </tr>'
-            book.isbn = Utils.regexSearch(isbnAlternative, page)
+            book.isbn = Utils.regexSearch(isbnAlternative, page).strip()
 
     if book.language == '':
         languageAlternative = 'Idioma </td> <td class="description__information-box-right">(.+?)</td> </tr>'
-        book.language = Utils.regexSearch(languageAlternative, page)
+        book.language = Utils.regexSearch(languageAlternative, page).strip()
 
     return book
 
@@ -176,7 +188,7 @@ def mercadoLivreWrapper(page) -> Book:
         'language': suf
     }
 
-    book = createBook(page, preffix, suffix)
+    book = createBook(page, 'mercadoLivre', preffix, suffix)
     return book
 
 
@@ -196,7 +208,7 @@ def saraivaWrapper(page) -> Book:
         'language': suf
     }
 
-    book = createBook(page, preffix, suffix)
+    book = createBook(page, 'saraiva', preffix, suffix)
     return book
 
 
@@ -216,7 +228,7 @@ def travessaWrapper(page) -> Book:
         'language': suf
     }
 
-    book = createBook(page, preffix, suffix)
+    book = createBook(page, 'travessa', preffix, suffix)
     return book
 
 
@@ -236,11 +248,22 @@ def culturaWrapper(page) -> Book:
         'language': suf
     }
 
-    book = createBook(page, preffix, suffix)
+    book = createBook(page, 'cultura', preffix, suffix)
     return book
 
 
-def singleWrapper(page) -> Book:
+def checkIsbn(isbn: str):
+    if len(isbn) > 13:
+        temp = isbn.split(' ')
+        isbn = ''
+        for result in temp:
+            if len(result) == 13:
+                isbn = result
+
+    return isbn if len(isbn) >= 10 else ''
+
+
+def singleWrapper(page, domain) -> Book:
 
     soup = BeautifulSoup(page, 'html.parser')
     authorInfo = ['autor', 'autor:']
@@ -265,23 +288,19 @@ def singleWrapper(page) -> Book:
     for index, res in enumerate(allTags):
         text: str = res.text.lower().strip()
         if (text in authorInfo):
-            author = allTags[index+1].text
+            author = allTags[index+1].text.strip()
         elif (text in publisherInfo):
-            publisher = allTags[index+1].text
+            publisher = allTags[index+1].text.strip()
         elif (text in isbnInfo):
-            isbn = allTags[index+1].text.strip()
-            if len(isbn) > 13:
-                isbn = isbn.split(' ')[-1]
+            isbn = checkIsbn(allTags[index+1].text.strip())
         elif (text in languageInfo):
-            language = allTags[index+1].text
+            language = allTags[index+1].text.strip()
 
-    return Book(author, publisher, isbn, language)
+    return Book(author, publisher, isbn, language, domain)
 
 
 def getAllBooks(option):
-    print("getting books...")
-    directories = ['americanas', 'cultura', 'curitiba', 'magazine',
-                   'mercadoLivre', 'saraiva', 'shoptime', 'submarino', 'travessa', 'vila']
+    print('getting books...')
     wrappers = {
         'americanas': americanasWrapper,
         'cultura': culturaWrapper,
@@ -295,49 +314,99 @@ def getAllBooks(option):
         'vila': vilaWrapper
     }
     books = []
-    for directory in directories:
+    for directory in DOMAINS:
         filenames = Utils.getFilenames(BOOKS_PATH + directory + '/pos')
         for filename in filenames:
             page = Utils.readFile(
                 BOOKS_PATH + directory + '/pos' + f'/{filename}')
             data = wrappers[directory](page) if (
-                option == 1) else singleWrapper(page)
-            book = {
-                'author': data.author.strip(),
-                'publisher': data.publisher.strip(),
-                'isbn': data.isbn.strip(),
-                'language': data.language.strip(),
-                'domain': directory
-
-            }
-            books.append(book)
+                option == 'manual') else singleWrapper(page, directory)
+            books.append(data)
     return books
 
 
-def writeBooks(books):
+def evalMetrics(n, e, c):
+    if c == 0 or e == 0:
+        return (0, 0, 0)
+
+    recall = c/n
+    precision = c/e
+    fMeasure = 2*recall*precision/(recall+precision)
+    return (recall, precision, fMeasure)
+
+
+def measureBooks(refBooks: list[Book], extractBooks: list[Book]):
+    e = 0
+    c = 0
+    n = len(refBooks) * 4
+    for index, book in enumerate(extractBooks):
+        if book.author != '':
+            e = e + 1
+            if book.author == refBooks[index].author:
+                c = c + 1
+        if book.publisher != '':
+            e = e + 1
+            if book.publisher == refBooks[index].publisher:
+                c = c + 1
+        if book.isbn != '':
+            e = e + 1
+            if book.isbn == refBooks[index].isbn:
+                c = c + 1
+        if book.language != '':
+            e = e + 1
+            if book.language == refBooks[index].language:
+                c = c + 1
+
+    return (n, e, c)
+
+
+def calcAllMetrics(manualBooks: list[Book], singleWrapperBooks: list[Book]):
+    print('calculating metrics...')
+    metrics = []
+    nT = 0
+    eT = 0
+    cT = 0
+    for domain in DOMAINS:
+        refBooks = [book for book in manualBooks if book.domain == domain]
+        extractBooks = [
+            book for book in singleWrapperBooks if book.domain == domain]
+        n, e, c = measureBooks(refBooks, extractBooks)
+        recall, precision, fMeasure = evalMetrics(n, e, c)
+        nT = nT + n
+        eT = eT + e
+        cT = cT + c
+        metrics.append({
+            'n': n,
+            'e': e,
+            'c': c,
+            'recall': recall,
+            'precision': precision,
+            'f-Measure': fMeasure,
+            'domain': domain
+        })
+    recall, precision, fMeasure = evalMetrics(nT, eT, cT)
+    metrics.append({
+        'n': nT,
+        'e': eT,
+        'c': cT,
+        'recall': recall,
+        'precision': precision,
+        'f-Measure': fMeasure,
+        'domain': 'all'
+    })
+    Utils.writeJsonFile('./metricsV3.json', metrics)
+
+
+def main():
+    manualBooks = getAllBooks('manual')
+    books = list(map(bookToDict, manualBooks))
     Utils.writeJsonFile('./result.json', books)
 
+    singleWrapperBooks = getAllBooks('single')
+    books = list(map(bookToDict, singleWrapperBooks))
+    Utils.writeJsonFile('./single_resultV3.json', books)
 
-def menu():
-    userInput = ''
-    while(userInput != '3'):
-        print("Choose an option:")
-        print("1 - Individual wrappers")
-        print("2 - Single wrapper")
-        print("3 - exit")
-        userInput = input("option:")
-        if userInput == '1':
-            books = getAllBooks(1)
-            Utils.writeJsonFile('./result.json', books)
-            break
-        elif userInput == '2':
-            books = getAllBooks(2)
-            Utils.writeJsonFile('./single_result.json', books)
-            break
-        elif userInput == '3':
-            break
-        else:
-            print("Invalid option, try again!")
+    calcAllMetrics(manualBooks, singleWrapperBooks)
 
 
-menu()
+main()

@@ -1,0 +1,101 @@
+[
+    {
+        "n": 40,
+        "e": 40,
+        "c": 40,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f-Measure": 1.0,
+        "domain": "americanas"
+    },
+    {
+        "n": 40,
+        "e": 40,
+        "c": 40,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f-Measure": 1.0,
+        "domain": "cultura"
+    },
+    {
+        "n": 40,
+        "e": 40,
+        "c": 40,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f-Measure": 1.0,
+        "domain": "curitiba"
+    },
+    {
+        "n": 40,
+        "e": 37,
+        "c": 36,
+        "recall": 0.9,
+        "precision": 0.972972972972973,
+        "f-Measure": 0.935064935064935,
+        "domain": "magazine"
+    },
+    {
+        "n": 40,
+        "e": 30,
+        "c": 30,
+        "recall": 0.75,
+        "precision": 1.0,
+        "f-Measure": 0.8571428571428571,
+        "domain": "mercadoLivre"
+    },
+    {
+        "n": 40,
+        "e": 40,
+        "c": 40,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f-Measure": 1.0,
+        "domain": "saraiva"
+    },
+    {
+        "n": 40,
+        "e": 40,
+        "c": 40,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f-Measure": 1.0,
+        "domain": "shoptime"
+    },
+    {
+        "n": 40,
+        "e": 40,
+        "c": 40,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f-Measure": 1.0,
+        "domain": "submarino"
+    },
+    {
+        "n": 40,
+        "e": 30,
+        "c": 30,
+        "recall": 0.75,
+        "precision": 1.0,
+        "f-Measure": 0.8571428571428571,
+        "domain": "travessa"
+    },
+    {
+        "n": 40,
+        "e": 40,
+        "c": 40,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f-Measure": 1.0,
+        "domain": "vila"
+    },
+    {
+        "n": 400,
+        "e": 377,
+        "c": 376,
+        "recall": 0.94,
+        "precision": 0.9973474801061007,
+        "f-Measure": 0.9678249678249679,
+        "domain": "all"
+    }
+]
