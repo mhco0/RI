@@ -9,13 +9,14 @@ DOMAINS = ['americanas', 'cultura', 'curitiba', 'magazine',
            'mercadoLivre', 'saraiva', 'shoptime', 'submarino', 'travessa', 'vila']
 
 
-def bookToDict(book: Book):
+def bookToDict(book: tuple):
     return {
-        'author': book.author,
-        'publisher': book.publisher,
-        'isbn': book.isbn,
-        'language': book.language,
-        'domain': book.domain
+        'author': book[0].author,
+        'publisher': book[0].publisher,
+        'isbn': book[0].isbn,
+        'language': book[0].language,
+        'domain': book[0].domain,
+        'path': book[1]
     }
 
 
@@ -317,11 +318,11 @@ def getAllBooks(option):
     for directory in DOMAINS:
         filenames = Utils.getFilenames(BOOKS_PATH + directory + '/pos')
         for filename in filenames:
-            page = Utils.readFile(
-                BOOKS_PATH + directory + '/pos' + f'/{filename}')
+            filePath = BOOKS_PATH + directory + '/pos' + f'/{filename}'
+            page = Utils.readFile(filePath)
             data = wrappers[directory](page) if (
                 option == 'manual') else singleWrapper(page, directory)
-            books.append(data)
+            books.append((data, filePath))
     return books
 
 
@@ -400,13 +401,13 @@ def calcAllMetrics(manualBooks: list[Book], singleWrapperBooks: list[Book]):
 def main():
     manualBooks = getAllBooks('manual')
     books = list(map(bookToDict, manualBooks))
-    Utils.writeJsonFile('./result.json', books)
+    Utils.writeJsonFile('./data.json', books)
 
-    singleWrapperBooks = getAllBooks('single')
-    books = list(map(bookToDict, singleWrapperBooks))
-    Utils.writeJsonFile('./single_resultV3.json', books)
+    # singleWrapperBooks = getAllBooks('single')
+    # books = list(map(bookToDict, singleWrapperBooks))
+    # Utils.writeJsonFile('./single_resultV3.json', books)
 
-    calcAllMetrics(manualBooks, singleWrapperBooks)
+    # calcAllMetrics(manualBooks, singleWrapperBooks)
 
 
 main()
