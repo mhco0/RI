@@ -5,7 +5,7 @@
         "isbn": "9788575422397",
         "language": "Português",
         "domain": "americanas",
-        "path": "../books/americanas/1.html"
+        "path": "americanas/1.html"
     },
     {
         "author": "Kiera Cass",
@@ -13,7 +13,7 @@
         "isbn": "9788565765015",
         "language": "Português",
         "domain": "americanas",
-        "path": "../books/americanas/10.html"
+        "path": "americanas/10.html"
     },
     {
         "author": "Disney Institute",
@@ -21,7 +21,7 @@
         "isbn": "9788502124042",
         "language": "Português",
         "domain": "americanas",
-        "path": "../books/americanas/2.html"
+        "path": "americanas/2.html"
     },
     {
         "author": "Victoria Aveyard",
@@ -29,7 +29,7 @@
         "isbn": "9788565765695",
         "language": "Português",
         "domain": "americanas",
-        "path": "../books/americanas/3.html"
+        "path": "americanas/3.html"
     },
     {
         "author": "Robert T. Kiyosaki",
@@ -37,7 +37,7 @@
         "isbn": "9788550801483",
         "language": "Português, Inglês",
         "domain": "americanas",
-        "path": "../books/americanas/4.html"
+        "path": "americanas/4.html"
     },
     {
         "author": "Alwyn Hamilton",
@@ -45,7 +45,7 @@
         "isbn": "9788555340291",
         "language": "Português",
         "domain": "americanas",
-        "path": "../books/americanas/5.html"
+        "path": "americanas/5.html"
     },
     {
         "author": "Cristiane Correa",
@@ -53,7 +53,7 @@
         "isbn": "9788575429105",
         "language": "Português",
         "domain": "americanas",
-        "path": "../books/americanas/6.html"
+        "path": "americanas/6.html"
     },
     {
         "author": "C. J. Tudor",
@@ -61,7 +61,7 @@
         "isbn": "9788551002933",
         "language": "Português",
         "domain": "americanas",
-        "path": "../books/americanas/7.html"
+        "path": "americanas/7.html"
     },
     {
         "author": "Thiago Nigro",
@@ -69,7 +69,7 @@
         "isbn": "9788595083271",
         "language": "Português",
         "domain": "americanas",
-        "path": "../books/americanas/8.html"
+        "path": "americanas/8.html"
     },
     {
         "author": "Karen M. McManus",
@@ -77,7 +77,7 @@
         "isbn": "9788501112521",
         "language": "Português",
         "domain": "americanas",
-        "path": "../books/americanas/9.html"
+        "path": "americanas/9.html"
     },
     {
         "author": "J. K. ROWLING",
@@ -85,7 +85,7 @@
         "isbn": "8532530435",
         "language": "PORTUGUÊS",
         "domain": "cultura",
-        "path": "../books/cultura/1.html"
+        "path": "cultura/1.html"
     },
     {
         "author": "JULIA QUINN",
@@ -93,7 +93,7 @@
         "isbn": "8580413079",
         "language": "PORTUGUÊS",
         "domain": "cultura",
-        "path": "../books/cultura/10.html"
+        "path": "cultura/10.html"
     },
     {
         "author": "HAL ELROD",
@@ -101,7 +101,7 @@
         "isbn": "8576849941",
         "language": "PORTUGUÊS",
         "domain": "cultura",
-        "path": "../books/cultura/2.html"
+        "path": "cultura/2.html"
     },
     {
         "author": "BARACK OBAMA",
@@ -109,7 +109,7 @@
         "isbn": "8535933964",
         "language": "PORTUGUÊS",
         "domain": "cultura",
-        "path": "../books/cultura/3.html"
+        "path": "cultura/3.html"
     },
     {
         "author": "LAURENTINO GOMES",
@@ -117,7 +117,7 @@
         "isbn": "6555670398",
         "language": "PORTUGUÊS",
         "domain": "cultura",
-        "path": "../books/cultura/4.html"
+        "path": "cultura/4.html"
     },
     {
         "author": "LORI GOTTLIEB",
@@ -125,7 +125,7 @@
         "isbn": "6599039812",
         "language": "PORTUGUÊS",
         "domain": "cultura",
-        "path": "../books/cultura/5.html"
+        "path": "cultura/5.html"
     },
     {
         "author": "GREG MCKEOWN",
@@ -133,7 +133,7 @@
         "isbn": "8543102146",
         "language": "PORTUGUÊS",
         "domain": "cultura",
-        "path": "../books/cultura/6.html"
+        "path": "cultura/6.html"
     },
     {
         "author": "CAROL DWECK",
@@ -141,7 +141,7 @@
         "isbn": "8547000240",
         "language": "PORTUGUÊS",
         "domain": "cultura",
-        "path": "../books/cultura/7.html"
+        "path": "cultura/7.html"
     },
     {
         "author": "CLARISSA PINKOLA ESTES",
@@ -149,7 +149,7 @@
         "isbn": "853252978X",
         "language": "PORTUGUÊS",
         "domain": "cultura",
-        "path": "../books/cultura/8.html"
+        "path": "cultura/8.html"
     },
     {
         "author": "NAPOLEON HILL",
@@ -157,7 +157,7 @@
         "isbn": "8568014003",
         "language": "PORTUGUÊS",
         "domain": "cultura",
-        "path": "../books/cultura/9.html"
+        "path": "cultura/9.html"
     },
     {
         "author": "COLLEEN HOOVER",
@@ -165,7 +165,7 @@
         "isbn": "8501301647",
         "language": "PORTUGUES",
         "domain": "curitiba",
-        "path": "../books/curitiba/1.html"
+        "path": "curitiba/1.html"
     },
     {
         "author": "ECKHART TOLLE",
@@ -173,7 +173,7 @@
         "isbn": "8575423134",
         "language": "PORTUGUES",
         "domain": "curitiba",
-        "path": "../books/curitiba/10.html"
+        "path": "curitiba/10.html"
     },
     {
         "author": "CARPINEJAR",
@@ -181,7 +181,7 @@
         "isbn": "6558380560",
         "language": "PORTUGUES",
         "domain": "curitiba",
-        "path": "../books/curitiba/2.html"
+        "path": "curitiba/2.html"
     },
     {
         "author": "CLARISSA PINKOLA ESTES",
@@ -189,7 +189,7 @@
         "isbn": "853252978X",
         "language": "PORTUGUES",
         "domain": "curitiba",
-        "path": "../books/curitiba/3.html"
+        "path": "curitiba/3.html"
     },
     {
         "author": "RANSOM RIGGS",
@@ -197,7 +197,7 @@
         "isbn": "6555603054",
         "language": "PORTUGUES",
         "domain": "curitiba",
-        "path": "../books/curitiba/4.html"
+        "path": "curitiba/4.html"
     },
     {
         "author": "ELAINNE OURIVES",
@@ -205,7 +205,7 @@
         "isbn": "8545203861",
         "language": "PORTUGUES",
         "domain": "curitiba",
-        "path": "../books/curitiba/5.html"
+        "path": "curitiba/5.html"
     },
     {
         "author": "CONSTANCE SAYERS",
@@ -213,7 +213,7 @@
         "isbn": "6589132216",
         "language": "PORTUGUES",
         "domain": "curitiba",
-        "path": "../books/curitiba/6.html"
+        "path": "curitiba/6.html"
     },
     {
         "author": "GABRIEL DEARO",
@@ -221,7 +221,7 @@
         "isbn": "6555355212",
         "language": "PORTUGUES",
         "domain": "curitiba",
-        "path": "../books/curitiba/7.html"
+        "path": "curitiba/7.html"
     },
     {
         "author": "ALEXANDRE COIMBRA",
@@ -229,7 +229,7 @@
         "isbn": "655535478X",
         "language": "PORTUGUES",
         "domain": "curitiba",
-        "path": "../books/curitiba/8.html"
+        "path": "curitiba/8.html"
     },
     {
         "author": "GEORGE S CLASON",
@@ -237,7 +237,7 @@
         "isbn": "8595081530",
         "language": "PORTUGUES",
         "domain": "curitiba",
-        "path": "../books/curitiba/9.html"
+        "path": "curitiba/9.html"
     },
     {
         "author": "J.K Rowling",
@@ -245,7 +245,7 @@
         "isbn": "9786555320343",
         "language": "Português",
         "domain": "magazine",
-        "path": "../books/magazine/1.html"
+        "path": "magazine/1.html"
     },
     {
         "author": "Orwell, George, Lima, Karla",
@@ -253,7 +253,7 @@
         "isbn": "7908312104603",
         "language": "Português, Inglês",
         "domain": "magazine",
-        "path": "../books/magazine/10.html"
+        "path": "magazine/10.html"
     },
     {
         "author": "Kiera Cass",
@@ -261,7 +261,7 @@
         "isbn": "9788555341489",
         "language": "Português",
         "domain": "magazine",
-        "path": "../books/magazine/2.html"
+        "path": "magazine/2.html"
     },
     {
         "author": "Vieira, Paulo",
@@ -269,7 +269,7 @@
         "isbn": "9788545202219",
         "language": "Português",
         "domain": "magazine",
-        "path": "../books/magazine/3.html"
+        "path": "magazine/3.html"
     },
     {
         "author": "Maud Montgomery, Lucy, Bonaldi, Rafael, Welcman, Max, Sette Camara, João, Mayumi, Beatriz",
@@ -277,7 +277,7 @@
         "isbn": "7908312103828",
         "language": "Português",
         "domain": "magazine",
-        "path": "../books/magazine/4.html"
+        "path": "magazine/4.html"
     },
     {
         "author": "Hill, Napoleon",
@@ -285,7 +285,7 @@
         "isbn": "9788568014004",
         "language": "Português, Inglês",
         "domain": "magazine",
-        "path": "../books/magazine/5.html"
+        "path": "magazine/5.html"
     },
     {
         "author": "Vieira, Paulo, de Sousa, Maurício",
@@ -293,7 +293,7 @@
         "isbn": "9786555440270",
         "language": "Português, Português",
         "domain": "magazine",
-        "path": "../books/magazine/6.html"
+        "path": "magazine/6.html"
     },
     {
         "author": "Zusak, Markus, Ribeiro, Vera",
@@ -301,7 +301,7 @@
         "isbn": "9788598078175",
         "language": "Português",
         "domain": "magazine",
-        "path": "../books/magazine/7.html"
+        "path": "magazine/7.html"
     },
     {
         "author": "George Orwell",
@@ -309,7 +309,7 @@
         "isbn": "9786589623045",
         "language": "Português",
         "domain": "magazine",
-        "path": "../books/magazine/8.html"
+        "path": "magazine/8.html"
     },
     {
         "author": "Simone de Beauvoir",
@@ -317,7 +317,7 @@
         "isbn": "9788520946213",
         "language": "Português",
         "domain": "magazine",
-        "path": "../books/magazine/9.html"
+        "path": "magazine/9.html"
     },
     {
         "author": "Autor: T. Harv Eker",
@@ -325,7 +325,7 @@
         "isbn": "9788575422397",
         "language": "Português",
         "domain": "mercadoLivre",
-        "path": "../books/mercadoLivre/1.html"
+        "path": "mercadoLivre/1.html"
     },
     {
         "author": "Vários Autores",
@@ -333,7 +333,7 @@
         "isbn": "9786555597943",
         "language": "Português",
         "domain": "mercadoLivre",
-        "path": "../books/mercadoLivre/10.html"
+        "path": "mercadoLivre/10.html"
     },
     {
         "author": "Lima, Branca Alves De",
@@ -341,7 +341,7 @@
         "isbn": "9788589987394",
         "language": "Português",
         "domain": "mercadoLivre",
-        "path": "../books/mercadoLivre/2.html"
+        "path": "mercadoLivre/2.html"
     },
     {
         "author": "Publicações Pão Diário",
@@ -349,7 +349,7 @@
         "isbn": "9786586078633",
         "language": "Português",
         "domain": "mercadoLivre",
-        "path": "../books/mercadoLivre/3.html"
+        "path": "mercadoLivre/3.html"
     },
     {
         "author": "Autor: Brené Brown",
@@ -357,7 +357,7 @@
         "isbn": "9788543104331",
         "language": "Português",
         "domain": "mercadoLivre",
-        "path": "../books/mercadoLivre/4.html"
+        "path": "mercadoLivre/4.html"
     },
     {
         "author": "Napoleon Hill",
@@ -365,7 +365,7 @@
         "isbn": "9788576766308",
         "language": "Português",
         "domain": "mercadoLivre",
-        "path": "../books/mercadoLivre/5.html"
+        "path": "mercadoLivre/5.html"
     },
     {
         "author": "Mark Douglas",
@@ -373,7 +373,7 @@
         "isbn": "9789895405046",
         "language": "Português",
         "domain": "mercadoLivre",
-        "path": "../books/mercadoLivre/6.html"
+        "path": "mercadoLivre/6.html"
     },
     {
         "author": "Robert Kiyosaki",
@@ -381,7 +381,7 @@
         "isbn": "9788550801483",
         "language": "Português",
         "domain": "mercadoLivre",
-        "path": "../books/mercadoLivre/7.html"
+        "path": "mercadoLivre/7.html"
     },
     {
         "author": "Autor: Eckhart Tolle",
@@ -389,7 +389,7 @@
         "isbn": "9788575420270",
         "language": "Português",
         "domain": "mercadoLivre",
-        "path": "../books/mercadoLivre/8.html"
+        "path": "mercadoLivre/8.html"
     },
     {
         "author": "Adaptação da obra de: Mark Manson",
@@ -397,7 +397,7 @@
         "isbn": "9788551002490",
         "language": "Português",
         "domain": "mercadoLivre",
-        "path": "../books/mercadoLivre/9.html"
+        "path": "mercadoLivre/9.html"
     },
     {
         "author": "Hill,Napoleon",
@@ -405,7 +405,7 @@
         "isbn": "9788568014004",
         "language": "Português",
         "domain": "saraiva",
-        "path": "../books/saraiva/1.html"
+        "path": "saraiva/1.html"
     },
     {
         "author": "Morris,Heather",
@@ -413,7 +413,7 @@
         "isbn": "9788542215694",
         "language": "Português",
         "domain": "saraiva",
-        "path": "../books/saraiva/10.html"
+        "path": "saraiva/10.html"
     },
     {
         "author": "Kiyosaki,Robert T.",
@@ -421,7 +421,7 @@
         "isbn": "9788550801483",
         "language": "Português",
         "domain": "saraiva",
-        "path": "../books/saraiva/2.html"
+        "path": "saraiva/2.html"
     },
     {
         "author": "Duhigg,Charles",
@@ -429,7 +429,7 @@
         "isbn": "9788539004119",
         "language": "Português",
         "domain": "saraiva",
-        "path": "../books/saraiva/3.html"
+        "path": "saraiva/3.html"
     },
     {
         "author": "Pasek,Benj,Levenson,Steven,Emmich,Val",
@@ -437,7 +437,7 @@
         "isbn": "9788555340833",
         "language": "Português",
         "domain": "saraiva",
-        "path": "../books/saraiva/4.html"
+        "path": "saraiva/4.html"
     },
     {
         "author": "Donlea,Charlie",
@@ -445,7 +445,7 @@
         "isbn": "9788562409882",
         "language": "Português",
         "domain": "saraiva",
-        "path": "../books/saraiva/5.html"
+        "path": "saraiva/5.html"
     },
     {
         "author": "Tolle,Eckhart",
@@ -453,7 +453,7 @@
         "isbn": "8575420275",
         "language": "Português",
         "domain": "saraiva",
-        "path": "../books/saraiva/6.html"
+        "path": "saraiva/6.html"
     },
     {
         "author": "Kahneman,Daniel",
@@ -461,7 +461,7 @@
         "isbn": "9788539003839",
         "language": "Português",
         "domain": "saraiva",
-        "path": "../books/saraiva/7.html"
+        "path": "saraiva/7.html"
     },
     {
         "author": "Doyle,Arthur Conan",
@@ -469,7 +469,7 @@
         "isbn": "9788565042772",
         "language": "Português",
         "domain": "saraiva",
-        "path": "../books/saraiva/8.html"
+        "path": "saraiva/8.html"
     },
     {
         "author": "O'leary,Beth",
@@ -477,7 +477,7 @@
         "isbn": "9788551005415",
         "language": "Português",
         "domain": "saraiva",
-        "path": "../books/saraiva/9.html"
+        "path": "saraiva/9.html"
     },
     {
         "author": "Lauren Layne",
@@ -485,7 +485,7 @@
         "isbn": "9788584391073",
         "language": "Português",
         "domain": "shoptime",
-        "path": "../books/shoptime/1.html"
+        "path": "shoptime/1.html"
     },
     {
         "author": "E. Lockhart",
@@ -493,7 +493,7 @@
         "isbn": "9788565765480",
         "language": "Português",
         "domain": "shoptime",
-        "path": "../books/shoptime/10.html"
+        "path": "shoptime/10.html"
     },
     {
         "author": "Victoria Aveyard",
@@ -501,7 +501,7 @@
         "isbn": "9788555340871",
         "language": "Português",
         "domain": "shoptime",
-        "path": "../books/shoptime/2.html"
+        "path": "shoptime/2.html"
     },
     {
         "author": "Victoria Aveyard",
@@ -509,7 +509,7 @@
         "isbn": "9788555340277",
         "language": "Português",
         "domain": "shoptime",
-        "path": "../books/shoptime/3.html"
+        "path": "shoptime/3.html"
     },
     {
         "author": "Victoria Aveyard",
@@ -517,7 +517,7 @@
         "isbn": "9788565765695",
         "language": "Português",
         "domain": "shoptime",
-        "path": "../books/shoptime/4.html"
+        "path": "shoptime/4.html"
     },
     {
         "author": "Taylor Jenkins Reid",
@@ -525,7 +525,7 @@
         "isbn": "9788584391509",
         "language": "Português",
         "domain": "shoptime",
-        "path": "../books/shoptime/5.html"
+        "path": "shoptime/5.html"
     },
     {
         "author": "J.R.R. Tolkien",
@@ -533,7 +533,7 @@
         "isbn": "9788595084742",
         "language": "Português",
         "domain": "shoptime",
-        "path": "../books/shoptime/6.html"
+        "path": "shoptime/6.html"
     },
     {
         "author": "Beth O�Leary",
@@ -541,7 +541,7 @@
         "isbn": "9788551005415",
         "language": "Português, Inglês",
         "domain": "shoptime",
-        "path": "../books/shoptime/7.html"
+        "path": "shoptime/7.html"
     },
     {
         "author": "Victoria Aveyard",
@@ -549,7 +549,7 @@
         "isbn": "9788555340550",
         "language": "Português",
         "domain": "shoptime",
-        "path": "../books/shoptime/8.html"
+        "path": "shoptime/8.html"
     },
     {
         "author": "Frank Herbert",
@@ -557,7 +557,7 @@
         "isbn": "9788576573135",
         "language": "Português",
         "domain": "shoptime",
-        "path": "../books/shoptime/9.html"
+        "path": "shoptime/9.html"
     },
     {
         "author": "Homero",
@@ -565,7 +565,7 @@
         "isbn": "9788563560940",
         "language": "Português",
         "domain": "submarino",
-        "path": "../books/submarino/1.html"
+        "path": "submarino/1.html"
     },
     {
         "author": "Taylor Jenkins Reid",
@@ -573,7 +573,7 @@
         "isbn": "9788584391509",
         "language": "Português",
         "domain": "submarino",
-        "path": "../books/submarino/10.html"
+        "path": "submarino/10.html"
     },
     {
         "author": "Victor Hugo",
@@ -581,7 +581,7 @@
         "isbn": "9788544000007",
         "language": "Português",
         "domain": "submarino",
-        "path": "../books/submarino/2.html"
+        "path": "submarino/2.html"
     },
     {
         "author": "Fiódor Dostoiévski",
@@ -589,7 +589,7 @@
         "isbn": "9786586014679",
         "language": "Português, Russo",
         "domain": "submarino",
-        "path": "../books/submarino/3.html"
+        "path": "submarino/3.html"
     },
     {
         "author": "Miguel de Cervantes",
@@ -597,7 +597,7 @@
         "isbn": "9788520923092",
         "language": "Português",
         "domain": "submarino",
-        "path": "../books/submarino/4.html"
+        "path": "submarino/4.html"
     },
     {
         "author": "Liev Tolstói",
@@ -605,7 +605,7 @@
         "isbn": "9788535930047",
         "language": "Português",
         "domain": "submarino",
-        "path": "../books/submarino/5.html"
+        "path": "submarino/5.html"
     },
     {
         "author": "Bram Stoker",
@@ -613,7 +613,7 @@
         "isbn": "9788566636239",
         "language": "Português",
         "domain": "submarino",
-        "path": "../books/submarino/6.html"
+        "path": "submarino/6.html"
     },
     {
         "author": "Jane Austen",
@@ -621,7 +621,7 @@
         "isbn": "9788544001820",
         "language": "Português",
         "domain": "submarino",
-        "path": "../books/submarino/7.html"
+        "path": "submarino/7.html"
     },
     {
         "author": "José Saramago",
@@ -629,7 +629,7 @@
         "isbn": "9788535930313",
         "language": "Português",
         "domain": "submarino",
-        "path": "../books/submarino/8.html"
+        "path": "submarino/8.html"
     },
     {
         "author": "Casey McQuiston",
@@ -637,7 +637,7 @@
         "isbn": "9788555340949",
         "language": "Português",
         "domain": "submarino",
-        "path": "../books/submarino/9.html"
+        "path": "submarino/9.html"
     },
     {
         "author": "Eliane Brum",
@@ -645,7 +645,7 @@
         "isbn": "9786559213023",
         "language": "Português",
         "domain": "travessa",
-        "path": "../books/travessa/1.html"
+        "path": "travessa/1.html"
     },
     {
         "author": "Contardo Calligaris",
@@ -653,7 +653,7 @@
         "isbn": "9786589733225",
         "language": "Português",
         "domain": "travessa",
-        "path": "../books/travessa/10.html"
+        "path": "travessa/10.html"
     },
     {
         "author": "Ziraldo",
@@ -661,7 +661,7 @@
         "isbn": "9788506086926",
         "language": "Português",
         "domain": "travessa",
-        "path": "../books/travessa/2.html"
+        "path": "travessa/2.html"
     },
     {
         "author": "Casey Mcquiston",
@@ -669,7 +669,7 @@
         "isbn": "9788555340949",
         "language": "Português",
         "domain": "travessa",
-        "path": "../books/travessa/3.html"
+        "path": "travessa/3.html"
     },
     {
         "author": "E. Lockhart",
@@ -677,7 +677,7 @@
         "isbn": "9788565765480",
         "language": "Português",
         "domain": "travessa",
-        "path": "../books/travessa/4.html"
+        "path": "travessa/4.html"
     },
     {
         "author": "Sebastiao Salgado",
@@ -685,7 +685,7 @@
         "isbn": "9783836585101",
         "language": "Inglês",
         "domain": "travessa",
-        "path": "../books/travessa/5.html"
+        "path": "travessa/5.html"
     },
     {
         "author": "Itamar Vieira Junior",
@@ -693,7 +693,7 @@
         "isbn": "9786580309313",
         "language": "Português",
         "domain": "travessa",
-        "path": "../books/travessa/6.html"
+        "path": "travessa/6.html"
     },
     {
         "author": "Lewis Carroll",
@@ -701,7 +701,7 @@
         "isbn": "9781783121830",
         "language": "Inglês",
         "domain": "travessa",
-        "path": "../books/travessa/7.html"
+        "path": "travessa/7.html"
     },
     {
         "author": "Hermann Hesse",
@@ -709,7 +709,7 @@
         "isbn": "9786556921976",
         "language": "Português",
         "domain": "travessa",
-        "path": "../books/travessa/8.html"
+        "path": "travessa/8.html"
     },
     {
         "author": "Maria Duenas",
@@ -717,7 +717,7 @@
         "isbn": "9786555354522",
         "language": "Português",
         "domain": "travessa",
-        "path": "../books/travessa/9.html"
+        "path": "travessa/9.html"
     },
     {
         "author": "Itamar Vieira Junior",
@@ -725,7 +725,7 @@
         "isbn": "9786580309313",
         "language": "Português",
         "domain": "vila",
-        "path": "../books/vila/1.html"
+        "path": "vila/1.html"
     },
     {
         "author": "Holly Black",
@@ -733,7 +733,7 @@
         "isbn": "9788501304469",
         "language": "Português",
         "domain": "vila",
-        "path": "../books/vila/10.html"
+        "path": "vila/10.html"
     },
     {
         "author": "Alex Michaelides",
@@ -741,7 +741,7 @@
         "isbn": "9788501116437",
         "language": "Português",
         "domain": "vila",
-        "path": "../books/vila/2.html"
+        "path": "vila/2.html"
     },
     {
         "author": "Ciranda Cultural",
@@ -749,7 +749,7 @@
         "isbn": "9788538055839",
         "language": "Português",
         "domain": "vila",
-        "path": "../books/vila/3.html"
+        "path": "vila/3.html"
     },
     {
         "author": "Deepak Chopra",
@@ -757,7 +757,7 @@
         "isbn": "9786555321524",
         "language": "Português",
         "domain": "vila",
-        "path": "../books/vila/4.html"
+        "path": "vila/4.html"
     },
     {
         "author": "Ken Follett",
@@ -765,7 +765,7 @@
         "isbn": "9786555652062",
         "language": "Português",
         "domain": "vila",
-        "path": "../books/vila/5.html"
+        "path": "vila/5.html"
     },
     {
         "author": "Kate Morton",
@@ -773,7 +773,7 @@
         "isbn": "9786555652147",
         "language": "Português",
         "domain": "vila",
-        "path": "../books/vila/6.html"
+        "path": "vila/6.html"
     },
     {
         "author": "Christopher Clarey",
@@ -781,7 +781,7 @@
         "isbn": "9786555602920",
         "language": "Português",
         "domain": "vila",
-        "path": "../books/vila/7.html"
+        "path": "vila/7.html"
     },
     {
         "author": "Sally Rooney",
@@ -789,7 +789,7 @@
         "isbn": "9786559213320",
         "language": "Português",
         "domain": "vila",
-        "path": "../books/vila/8.html"
+        "path": "vila/8.html"
     },
     {
         "author": "Laurentino Gomes",
@@ -797,6 +797,6 @@
         "isbn": "9786555670394",
         "language": "Português",
         "domain": "vila",
-        "path": "../books/vila/9.html"
+        "path": "vila/9.html"
     }
 ]
