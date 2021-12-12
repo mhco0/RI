@@ -198,7 +198,7 @@ class ReverseIndex(object):
     def get_document_map(self):
         return self.path_to_id
 
-    def get_attributes_map(self):
+    def get_attributes_dict(self):
         return self.dfattributes
 
     def get_document_by_id(self, idx):
