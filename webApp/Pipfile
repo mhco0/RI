@@ -5,6 +5,10 @@ name = "pypi"
 
 [packages]
 flask = "*"
+bs4 = "*"
+unicode = "*"
+unidecode = "*"
+nltk = "*"
 
 [dev-packages]
 

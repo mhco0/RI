@@ -21,7 +21,7 @@
           <br>
           <label for="language">Language:</label>
           <select class="form-control" name="language" id="language">
-            <option value="all" selected>any language</option>
+            <option value="" selected>any language</option>
             <option lang="de" value="deutsch">Deutsch</option>
             <option lang="en" value="english">English</option>
             <option lang="fr" value="francais">Français</option>
@@ -32,8 +32,8 @@
           <label for="isbn">ISBN:</label>
           <input type="search" class="form-control" name="isbn" id="isbn" value="">
           <br>
-          <label for="book_text">with the words:</label>
-          <input type="search" class="form-control" name="book_text" id="book_text" value="">
+          <label for="words">with the words:</label>
+          <input type="search" class="form-control" name="words" id="words" value="">
           <br>
           <button class="btn btn-primary btn-lg btn-block" type="submit">Search</button>
         </form>
@@ -44,8 +44,14 @@
   {% if searches %}
   <h2>Seaches you have made:</h2>
   <ul>
-    {% for search in searches %}
-    <li>{{ search }}</li>
+    {% for author, publisher, language, isbn, words in searches['history'] %}
+    <li>
+      {% if author!='' %}<b>Author:</b> {{ author }} {% endif %}
+      {% if publisher!='' %}<b>Publisher:</b> {{ publisher }} {% endif %}
+      {% if language!='' %}<b>Language:</b> {{ language }} {% endif %}
+      {% if isbn!='' %}<b>ISBN:</b> {{ isbn }} {% endif %}
+      {% if words!='' %}<b>with the words:</b> {{ words }} {% endif %}
+    </li>
     {% endfor %}
   </ul>
   {% endif %}
