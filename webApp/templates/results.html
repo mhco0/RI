@@ -3,47 +3,62 @@
 {% block title %}Search for {% if author %}"{{ author }}"{% endif %}{% endblock %}
 
 {% block main %}
-
-
-
-{% if recommendations %}
-<h5 style="margin-left: 10pt;">Related searches:</h5>
-
-<form form action="results" method="post">
-    <div style="margin-bottom: 3pt; margin-left: 20pt;">
-        {% if recommendations['author'] %}
-        Author:
-        {% for att_tuples in recommendations['author'] %}
-        <button type="submit" value="{{att_tuples[0]}}" name="author" class="btn btn-outline-primary btn-sm"
-            style="border-radius: 12pt;">{{
-            att_tuples[0] }}</button>
-        {% endfor %}
-        {% endif %}
+<div style="padding-left: 24pt;">
+    {% if results %}
+    <p style="margin-top: 15pt;"></p>
+    {% for page in results%}
+    <div style="margin-top: 15pt;">
+        <a href="{{page[2]}}" target="_blank">{{ page[0] }}</a>
+        <p style="margin: 0px 0px 0px; font-size: small;">
+            {% if page[1] %}
+            {{ page[1] }}
+            {% else %}
+            {{ page[0] }}
+            {% endif %}
+        </p>
     </div>
+    {% endfor %}
+    {% endif %}
 
-    <div style="margin-bottom: 3pt;margin-left: 20pt;">
-        {% if recommendations['publisher'] %}
-        Publisher:
-        {% for att_tuples in recommendations['publisher'] %}
-        <button type="submit" value="{{att_tuples[0]}}" name="publisher" class="btn btn-outline-primary btn-sm"
-            style="border-radius: 12pt;">{{
-            att_tuples[0]
-            }}</button>
-        {% endfor %}
-        {% endif %}
-    </div>
+    {% if recommendations %}
+    <h5 style="margin-top: 20pt">Related searches:</h5>
 
-    <div style="margin-bottom: 3pt;margin-left: 20pt;">
-        {% if recommendations['words'] %}
-        with the words:
-        {% for att_tuples in recommendations['words'] %}
-        <button type="submit" value="{{att_tuples[0]}}" name="words" class="btn btn-outline-primary btn-sm"
-            style="border-radius: 12pt;">{{
-            att_tuples[0]
-            }}</button>
-        {% endfor %}
-        {% endif %}
-    </div>
-</form>
-{% endif %}
+    <form form action="results" method="post" style="margin-bottom: 20pt; margin-left: 20pt;">
+        <div style="margin-bottom: 3pt;">
+            {% if recommendations['author'] %}
+            Author:
+            {% for att_tuples in recommendations['author'] %}
+            <button type="submit" value="{{att_tuples[0]}}" name="author" class="btn btn-outline-primary btn-sm"
+                style="border-radius: 12pt;">{{
+                att_tuples[0] }}</button>
+            {% endfor %}
+            {% endif %}
+        </div>
+
+        <div style="margin-bottom: 3pt;">
+            {% if recommendations['publisher'] %}
+            Publisher:
+            {% for att_tuples in recommendations['publisher'] %}
+            <button type="submit" value="{{att_tuples[0]}}" name="publisher" class="btn btn-outline-primary btn-sm"
+                style="border-radius: 12pt;">{{
+                att_tuples[0]
+                }}</button>
+            {% endfor %}
+            {% endif %}
+        </div>
+
+        <div style="margin-bottom: 3pt;">
+            {% if recommendations['words'] %}
+            with the words:
+            {% for att_tuples in recommendations['words'] %}
+            <button type="submit" value="{{att_tuples[0]}}" name="words" class="btn btn-outline-primary btn-sm"
+                style="border-radius: 12pt;">{{
+                att_tuples[0]
+                }}</button>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </form>
+    {% endif %}
+</div>
 {% endblock %}

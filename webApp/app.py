@@ -1,8 +1,13 @@
 from flask import Flask, render_template, session, request, redirect, url_for
 from mutual_information import MutualInformation
+from utils import Utils
+from time import process_time
+import random
 
 app = Flask(__name__)
 app.secret_key = 'a1Aw04f3iLlu3Fgfw238Fli32lgD42pRo'
+
+results_dict = Utils.readJsonFile('./results.json')
 
 
 @app.route('/')
@@ -13,6 +18,7 @@ def home():
 @app.route('/results', methods=['GET', 'POST'])
 def results():
     if request.method == 'POST':
+        t1_start = process_time()
         author = request.form['author'] if ('author' in
                                             request.form) else ''
         publisher = request.form['publisher'] if ('publisher' in
@@ -26,6 +32,12 @@ def results():
         user_search = [('author', author), ('publisher', publisher),
                        ('language', language), ('isbn', isbn), ('words', words)]
 
+        ranking = [random.randint(0, 199) for x in range(10)]
+        print(ranking)
+        results = []
+        for id in ranking:
+            results.append(results_dict[str(id)])
+
         if('history' in session):
             session['history'] = [
                 (author, publisher, language, isbn, words)] + session['history']
@@ -38,7 +50,9 @@ def results():
             'words': MutualInformation.calcMutualInformation(words)
         }
 
-        return render_template('results.html', recommendations=recommendations)
+        t1_stop = process_time()
+        print("Elapsed time whole function in seconds:", t1_stop-t1_start)
+        return render_template('results.html', recommendations=recommendations, results=results)
     else:
         return redirect(url_for('home'))
 
