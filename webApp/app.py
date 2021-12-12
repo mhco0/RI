@@ -1,7 +1,6 @@
 from flask import Flask, render_template, session, request, redirect, url_for
 from mutual_information import MutualInformation
 from utils import Utils
-from bs4 import BeautifulSoup
 from time import process_time
 import random
 
@@ -34,15 +33,9 @@ def results():
                        ('language', language), ('isbn', isbn), ('words', words)]
 
         ranking = [random.randint(0, 199) for x in range(10)]
-        ranking = [1, 32, 5, 133, 76, 54, 23, 74, 85, 96, 102, 123]
         results = []
-        # for id in ranking:
-        #     results.append(results_dict[str(id)])
         for id in ranking:
-            paths = Utils.readJsonFile('./paths.json')
-            page = Utils.readFile(paths[str(id)])
-            result = pageToResult(page)
-            results.append(result)
+            results.append(results_dict[str(id)])
 
         if('history' in session):
             session['history'] = [
@@ -57,8 +50,9 @@ def results():
         }
 
         t1_stop = process_time()
-        print("Elapsed time to process results in seconds:", t1_stop-t1_start)
-        return render_template('results.html', recommendations=recommendations, results=results)
+        total_time = t1_stop-t1_start
+        print("Elapsed time to process results in seconds:", total_time)
+        return render_template('results.html', recommendations=recommendations, results=results, qtd=len(ranking), time=total_time)
     else:
         return redirect(url_for('home'))
 
@@ -66,24 +60,3 @@ def results():
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('page_not_found.html'), 404
-
-
-def pageToResult(page: str):
-    url = Utils.regexSearch('saved from url=\(\d\d\d\d\)(.+?) -->', page)
-    soup = BeautifulSoup(page, 'html.parser')
-    head = soup.head
-
-    title = head.title
-    description = ''
-    if title:
-        title = title.text
-    else:
-        'Sem Titulo'
-    metas = head.find_all('meta')
-    for meta in metas:
-        if meta.has_attr('name'):
-            if meta['name'] == 'description':
-                description = meta['content']
-                break
-
-    return [title, description, url]

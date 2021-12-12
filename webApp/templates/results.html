@@ -3,6 +3,8 @@
 {% block title %}Search for {% if author %}"{{ author }}"{% endif %}{% endblock %}
 
 {% block main %}
+<p style="color: gray; font-size: small; margin-left: 24pt;">About {{qtd}} results ({{ '{:.2f}'.format(time) }} seconds)
+</p>
 <div style="padding-left: 24pt;">
     {% if results %}
     <p style="margin-top: 15pt;"></p>
