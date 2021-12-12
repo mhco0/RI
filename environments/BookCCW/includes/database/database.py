@@ -43,3 +43,41 @@ class Database:
     def save_robots_file(self, filename, text):
         with open(filename, 'w', encoding='utf-8') as file:
             file.write(text)
+
+    def load_file(self, filename):
+        with open(filename, 'r', encoding='utf-8') as file:
+            obj = json.load(file)
+        
+        return DatabaseObj(filename, obj["link"], obj["content"])
+    
+    def load_robots_file(self, filename):
+        with open(filename, 'r', encoding='utf-8') as file:
+            return file.read()
+
+    def load_dirs(self, directory):
+        objs = []
+
+        for file_or_dir in os.listdir(self.base_path + '/' + directory):
+            if os.path.isfile(self.base_path + '/' + file_or_dir):
+                objs.append(self.load_file(file_or_dir))
+
+        return objs
+
+    def load_dir_texts(self, directory):
+        objs = []
+
+        for file_or_dir in os.listdir(self.base_path + '/' + directory):
+            if os.path.isfile(self.base_path + '/' + directory + '/' + file_or_dir):
+                objs.append([self.load_robots_file(self.base_path + '/' + directory + '/' + file_or_dir), self.base_path + '/' + directory + '/' + file_or_dir])
+
+        return objs
+
+
+    def list_dirs(self):
+        dirs = []
+
+        for file_or_dir in os.listdir(self.base_path):
+            if os.path.isdir(self.base_path + '/' +  file_or_dir):
+                dirs.append(file_or_dir)
+        
+        return dirs
