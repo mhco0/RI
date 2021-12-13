@@ -47,13 +47,12 @@ class MutualInformation:
         mutualInformations = {}
         for word in words:
             if word != '':
-                for bigram in bigrams:
-                    if word in bigram:
+                for bigram, fxy in bigrams.items():
+                    if word in bigram.split(' '):
                         fx = unigrams[word]
                         wordTwo = bigram.replace(word, '').strip()
                         if wordTwo in unigrams:
                             fy = unigrams[wordTwo]
-                            fxy = bigrams[bigram]
                             ixy = math.log2((fxy / n)/((fx / n)*(fy/n)))
                             mutualInformations[bigram] = ixy
 

@@ -3,11 +3,13 @@ from mutual_information import MutualInformation
 from utils import Utils
 from time import process_time
 import random
+from ranking import Ranker
 
 app = Flask(__name__)
 app.secret_key = 'a1Aw04f3iLlu3Fgfw238Fli32lgD42pRo'
 
 results_dict = Utils.readJsonFile('./results.json')
+ranker = Ranker()
 
 
 @app.route('/')
@@ -32,9 +34,11 @@ def results():
         user_search = [('author', author), ('publisher', publisher),
                        ('language', language), ('isbn', isbn), ('words', words)]
 
-        ranking = [random.randint(0, 199) for x in range(10)]
+        # ranking = [random.randint(0, 199) for x in range(10)]
+        ranking = ranker.score_tfidf(user_search)
+
         results = []
-        for id in ranking:
+        for id in ranking[0:5]:
             results.append(results_dict[str(id)])
 
         if('history' in session):
