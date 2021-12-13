@@ -3,6 +3,7 @@ import math
 import re
 import unidecode
 import nltk
+import json
 
 def tokenize(text):
         nltk.download('punkt')
@@ -26,60 +27,68 @@ def tokenize(text):
 
 class Ranker():
     def __init__(self):
-        self.postings = {"livro" : [(np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0])],
-        "grande" : [(np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0])],
-        "sobre" : [(np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0])],
-        "guerras" : [(np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0])],
-        "vive" : [(np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0])],
-        "fechado" : [(np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0])],
-        "fome" : [(np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0])],
-        "pensa" : [(np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0])],
-        "pensador" : [(np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0])],
-        "terror" : [(np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0])],
-        "ficcao" : [(np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0])],
-        "romance" : [(np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0])],
-        "infantil" : [(np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0])],
-        "politica" : [(np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0]), (np.random.randint(0,20,1)[0], np.random.randint(1,20,1)[0])]}
+        self.postings = json.load(open('postings.json'))
+        self.N = 100
 
-    def score(self, query):
+    def score(self, q):
+        query = ""
+        for x in q:
+            if x[0]!= 'words' and x[1] != '':
+                query+=x[0]+'.'+x[1]+' ' 
+            else:
+                query+=x[1]
+        
         query = tokenize(query)
-        print(query)
-        scores = np.zeros(20)
+        scores = np.zeros(self.N*2)
 
         terms_in_query = list(set(query.split(' ')))
         
         for s in terms_in_query:
-            docs = self.postings[s]
-            for d in docs:
-                scores[d[0]] += d[1]*query.count(s)
+            if s in self.postings:
+                docs = self.postings[s]
+                for d in docs:
+                    scores[d[0]] += d[1]*query.count(s)
 
         for i in range(0, len(scores)):
-            scores[i] = scores[i]/np.random.randint(100, 500, 1)
+            scores[i] = scores[i]/self.N
 
         return scores
     
     def tf_idf(self, freq, term):
-        N = 100
+        
         if term in self.postings:
-            return freq*math.log(N/freq, 2)
+            return freq*math.log(self.N/freq, 2)
         else:
             return 0
     
-    def score_tfidf(self, query):
+    def score_tfidf(self, q):
+        query = ""
+        for x in q:
+            if x[0]!= 'words' and x[1] != '':
+                query+=x[0]+'.'+x[1]+' ' 
+            else:
+                query+=x[1]
+        
         query = tokenize(query)
-        scores = np.zeros(20)
+        scores = np.zeros(self.N*2)
 
         terms_in_query = list(set(query.split(' ')))
         
         for s in terms_in_query:
-            docs = self.postings[s]
-            for d in docs:
-                scores[d[0]] += self.tf_idf(d[1], s)*self.tf_idf(query.count(s), s)
+            if s in self.postings:
+                docs = self.postings[s]
+                for d in docs:
+                    scores[d[0]] += self.tf_idf(d[1], s)*self.tf_idf(query.count(s), s)
 
         for i in range(0, len(scores)):
-            scores[i] = scores[i]/np.random.randint(100, 500, 1)
+            scores[i] = scores[i]/self.N
 
         return scores
 
 r = Ranker()
-print(r.score("política guerras politica"))
+qx = [('author', 'rooney'), ('publisher', ''), ('language', ''), ('isbn', ''), ('words', 'smash')]
+
+s = r.score(qx)
+s_sorted = sorted(range(len(s)), key=lambda k: s[k], reverse=True)
+
+print(s_sorted[0:5])
